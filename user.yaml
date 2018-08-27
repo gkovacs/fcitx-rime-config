@@ -1,12 +1,13 @@
 var:
   option:
     simplification: true
-  previously_selected_schema: hannomPS
+  previously_selected_schema: roma_kr
   schema_access_time:
     hannomPS: 1535360752
     hungmaau_jyutping: 1535354265
     jyutping: 1535359534
     leimaau_jyutping: 1535355397
     luna_pinyin: 1525769866
+    roma_kr: 1535368030
     stoke: 1535360462
     td_pinyin_flypy: 1535360489

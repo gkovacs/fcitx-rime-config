@@ -3,8 +3,8 @@ ascii_composer:
   switch_key:
     Shift_L: noop
     Shift_R: noop
-config_version: 0.35.custom.4176094039
-customization: 4176094039
+config_version: 0.35.custom.578030578
+customization: 578030578
 key_binder:
   bindings:
     - {accept: "Control+p", send: Up, when: composing}
@@ -118,6 +118,7 @@ schema_list:
   - schema: td_pinyin_flypy
   - schema: leimaau_jyutping
   - schema: hannomPS
+  - schema: roma_kr
 switcher:
   abbreviate_options: true
   caption: "〔方案選單〕"
