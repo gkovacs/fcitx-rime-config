@@ -1,9 +1,9 @@
 var:
   option:
     simplification: true
-  previously_selected_schema: td_pinyin_flypy
+  previously_selected_schema: hannomPS
   schema_access_time:
-    hannomPS: 1535360205
+    hannomPS: 1535360752
     hungmaau_jyutping: 1535354265
     jyutping: 1535359534
     leimaau_jyutping: 1535355397
