@@ -1,6 +1,9 @@
 var:
   option:
     simplification: true
-  previously_selected_schema: luna_pinyin
+  previously_selected_schema: td_pinyin_flypy
   schema_access_time:
+    hungmaau_jyutping: 1535354265
+    leimaau_jyutping: 1535354984
     luna_pinyin: 1525769866
+    td_pinyin_flypy: 1535355005
