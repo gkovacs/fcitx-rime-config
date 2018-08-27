@@ -3,7 +3,10 @@ var:
     simplification: true
   previously_selected_schema: td_pinyin_flypy
   schema_access_time:
+    hannomPS: 1535360205
     hungmaau_jyutping: 1535354265
-    leimaau_jyutping: 1535354984
+    jyutping: 1535359534
+    leimaau_jyutping: 1535355397
     luna_pinyin: 1525769866
-    td_pinyin_flypy: 1535355005
+    stoke: 1535360462
+    td_pinyin_flypy: 1535360489
