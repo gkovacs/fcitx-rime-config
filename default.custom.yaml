@@ -6,10 +6,11 @@
 
 patch:
   schema_list:
-    - schema: td_pinyin_flypy          # 朙月拼音
+    - schema: td_pinyin_flypy_jyutping
+    #- schema: td_pinyin_flypy          # 朙月拼音
     - schema: leimaau_jyutping
-    - schema: hannomPS
-    - schema: roma_kr
+    #- schema: hannomPS
+    #- schema: roma_kr
     #- schema: stoke
     #- schema: luna_pinyin          # 朙月拼音
     #- schema: double_pinyin        # 自然碼雙拼
