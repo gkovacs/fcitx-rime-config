@@ -21,8 +21,13 @@ switches:
     states: [ 中文, 西文 ]
   - name: full_shape
     states: [ 半角, 全角 ]
-  - name: simplification
-    states: [ 漢字, 汉字 ]
+  #- name: simplification
+  #  states: [ 漢字, 汉字 ]
+  - options: [zh_simp, zh_hk ]
+    reset: 0
+    states:
+      - 字形 → 大陸
+      - 字形 → 香港
   - name: ascii_punct
     states: [ 。，, ．， ]
 
@@ -63,7 +68,9 @@ engine:
     - script_translator@jyutping_to_putonghua_lookup
   filters:
     #- reverse_lookup_filter
-    - simplifier
+    #- simplifier
+    - simplifier@zh_simp
+    - simplifier@zh_hk
     - uniquifier
     - reverse_lookup_filter@jyutping_reverse_lookup
     - reverse_lookup_filter@putonghua_to_jyutping_reverse_lookup
@@ -418,3 +425,15 @@ recognizer:
     #zyenpheng_lookup: "`Z[a-z]*;?$"
     #naambaak_lookup: "`N[a-z]*;?$"
     punct: ^/[0-9]?[a-z]*$
+
+
+zh_simp:
+  option_name: zh_simp
+  opencc_config: t2s.json
+  tips: none
+
+zh_hk:
+  option_name: zh_hk
+  opencc_config: t2hk.json
+  tips: none
+
