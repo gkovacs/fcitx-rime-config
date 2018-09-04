@@ -1,15 +1,17 @@
 var:
   option:
     simplification: true
-  previously_selected_schema: td_pinyin_flypy_jyutping
+  previously_selected_schema: hangyl
   schema_access_time:
+    hangyl: 1536101191
+    hangyl_hanja: 1536100280
     hannomPS: 1535360752
     hungmaau_jyutping: 1535437026
     jyutping: 1535359534
-    leimaau_jyutping: 1536090802
+    leimaau_jyutping: 1536099688
     luna_pinyin: 1525769866
     naamning_jyutping: 1535431410
     roma_kr: 1535429203
     stoke: 1535360462
     td_pinyin_flypy: 1535437018
-    td_pinyin_flypy_jyutping: 1536091864
+    td_pinyin_flypy_jyutping: 1536099709
