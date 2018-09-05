@@ -2,9 +2,9 @@ var:
   option:
     ascii_punct: false
     simplification: false
-  previously_selected_schema: hangyl
+  previously_selected_schema: td_pinyin_flypy_jyutping
   schema_access_time:
-    hangyl: 1536105766
+    hangyl: 1536109268
     hangyl_hanja: 1536102025
     hannomPS: 1535360752
     hungmaau_jyutping: 1535437026
@@ -15,4 +15,4 @@ var:
     roma_kr: 1535429203
     stoke: 1535360462
     td_pinyin_flypy: 1535437018
-    td_pinyin_flypy_jyutping: 1536105116
+    td_pinyin_flypy_jyutping: 1536109798
