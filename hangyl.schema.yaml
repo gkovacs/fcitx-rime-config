@@ -30,8 +30,8 @@ switches:
   - name: half_shape
     states: [ 半角, 全角 ]
     reset: 0
-  - name: ascii_punct
-    states: [ 。，, ．， ]
+  #- name: ascii_punct
+  #  states: [ 。，, ．， ]
 
 engine:
   processors:
