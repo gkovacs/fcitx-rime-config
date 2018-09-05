@@ -60,7 +60,6 @@ engine:
     - fallback_segmentor
   translators:
     - punct_translator
-    - "table_translator@custom_phrase"
     - reverse_lookup_translator
     - script_translator
     - script_translator@jyutping_lookup
