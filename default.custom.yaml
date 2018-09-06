@@ -11,8 +11,8 @@ patch:
     - schema: leimaau_jyutping
     - schema: hangyl
     #- schema: hangyl_hanja
-    - schema: hannomPS
     - schema: nihongo-hybrid
+    - schema: hannomPS
     #- schema: roma_kr
     #- schema: stoke
     #- schema: luna_pinyin          # 朙月拼音
