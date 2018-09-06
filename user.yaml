@@ -2,11 +2,11 @@ var:
   option:
     ascii_punct: false
     simplification: false
-  previously_selected_schema: td_pinyin_flypy_jyutping
+  previously_selected_schema: hannomPS
   schema_access_time:
     hangyl: 1536262487
     hangyl_hanja: 1536102025
-    hannomPS: 1536271746
+    hannomPS: 1536274314
     hungmaau_jyutping: 1535437026
     jyutping: 1535359534
     leimaau_jyutping: 1536099688
