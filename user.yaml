@@ -1,19 +1,20 @@
 var:
   option:
     ascii_punct: false
+    full_shape: false
     simplification: false
   previously_selected_schema: td_pinyin_flypy_jyutping
   schema_access_time:
     hangyl: 1536449326
     hangyl_hanja: 1536102025
-    hannomPS: 1536448519
+    hannomPS: 1537364892
     hungmaau_jyutping: 1535437026
     jyutping: 1535359534
     leimaau_jyutping: 1536448494
     luna_pinyin: 1525769866
     naamning_jyutping: 1535431410
-    "nihongo-hybrid": 1536449123
+    "nihongo-hybrid": 1537364887
     roma_kr: 1535429203
     stoke: 1535360462
     td_pinyin_flypy: 1535437018
-    td_pinyin_flypy_jyutping: 1536449752
+    td_pinyin_flypy_jyutping: 1537364895
