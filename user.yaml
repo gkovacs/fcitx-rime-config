@@ -3,9 +3,9 @@ var:
     ascii_punct: false
     full_shape: false
     simplification: false
-  previously_selected_schema: colemak
+  previously_selected_schema: td_pinyin_flypy_jyutping
   schema_access_time:
-    colemak: 1538046395
+    colemak: 1538046916
     hangyl: 1536449326
     hangyl_hanja: 1536102025
     hannomPS: 1538003373
@@ -18,5 +18,5 @@ var:
     roma_kr: 1535429203
     stoke: 1535360462
     td_pinyin_flypy: 1535437018
-    td_pinyin_flypy_jyutping: 1538046390
+    td_pinyin_flypy_jyutping: 1538046922
     td_pinyin_flypy_jyutping_colemak: 1538046303
