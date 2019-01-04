@@ -85,7 +85,7 @@ speller:
   delimiter: " '"
   algebra:
     - derive/([123456])//         # 忽略声调
-    - derive/^([aeiou])/q$1/      # 增加 q 表示喉塞
+    #- derive/^([aeiou])/q$1/      # 增加 q 表示喉塞
     #- xform/1/q/
     #- xform/4/qq/
     #- xform/2/v/
@@ -106,13 +106,13 @@ speller:
     - derive/^jyu/ju/             # 容錯 jyu -> ju
     - derive/aa/r/                # 容錯 aa -> r
     - derive/aa$/a/               # 容錯 aa -> a
-    - derive/dik$/d/              # 快出「的」字
+    #- derive/dik$/d/              # 快出「的」字
     - derive/oe(ng|k)$/eo$1/      # 容錯 oe(ng|k) -> eo(ng|k)
     - derive/eo([int])$/oe$1/     # 容錯 eo(int) -> oe(int)
-    - derive/^(g|k)w/$1u/         # 廣州式
-    - derive/aau$/ao/             # 廣州式 aau -> ao
+    #- derive/^(g|k)w/$1u/         # 廣州式
+    #- derive/aau$/ao/             # 廣州式 aau -> ao
     - derive/yu/y/                # 教院式 jyu -> jy，yu -> y
-    - derive/eoi$/eoy/            # 教院式 eoi <-> eoy
+    #- derive/eoi$/eoy/            # 教院式 eoi <-> eoy
     - derive/eo([int])$/u$1/      # 模糊 eo(int) -> u(int)
     - derive/([bpmfdtnlgkhzcs])ei$/$1i/         # 模糊 ei -> i
     - derive/ou$/u/          	  # 模糊 ou -> u
