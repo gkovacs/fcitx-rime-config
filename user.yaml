@@ -5,19 +5,6 @@ var:
     simplification: false
   previously_selected_schema: leimaau_jyutping
   schema_access_time:
-    colemak: 1546565229
-    hangyl: 1544497900
-    hangyl_hanja: 1536102025
-    hannomPS: 1546559685
-    hungmaau_jyutping: 1535437026
-    jyutping: 1535359534
-    leimaau_jyutping: 1546565232
-    luna_pinyin: 1525769866
-    naamning_jyutping: 1535431410
-    "nihongo-hybrid": 1546564602
-    roma_kr: 1535429203
-    stoke: 1535360462
-    td_pinyin_flypy: 1535437018
-    td_pinyin_flypy_jyutping: 1546564501
-    td_pinyin_flypy_jyutping_colemak: 1538046303
-    wubi_pinyin: 1546561739
+    colemak: 1546569888
+    leimaau_jyutping: 1546569930
+    leimaau_jyutping_nospaces: 1546569476
