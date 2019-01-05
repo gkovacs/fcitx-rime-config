@@ -1,4 +1,5 @@
 lines = open('leimaau_jyutping.dict.yaml').readlines()
+#lines = open('terra_pinyin.dict.yaml').readlines()
 output = []
 for x in lines:
   #x = x.strip()
