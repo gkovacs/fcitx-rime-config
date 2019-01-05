@@ -3,9 +3,10 @@ var:
     ascii_punct: false
     full_shape: false
     simplification: false
-  previously_selected_schema: leimaau_jyutping
+  previously_selected_schema: colemak
   schema_access_time:
-    colemak: 1546633522
-    leimaau_jyutping: 1546636510
+    colemak: 1546646840
+    hannomPS: 1546644029
+    leimaau_jyutping: 1546646766
     leimaau_jyutping_nospaces: 1546569476
-    td_pinyin_flypy_jyutping: 1546636476
+    td_pinyin_flypy_jyutping: 1546646816

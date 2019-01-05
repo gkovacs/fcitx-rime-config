@@ -57,4 +57,7 @@ patch:
       - {accept: "Control+Shift+Z", select: .next, when: always}
       - {accept: "Control+Shift+a", toggle: ascii_mode, when: always}
       - {accept: "Control+Shift+A", toggle: ascii_mode, when: always}
-      - {accept: "Shift+space", toggle: full_shape, when: always}
+      - {accept: "Control+Shift+space", select: .next, when: always}
+      - {accept: "Shift+space", toggle: noop, when: always} #取消全半角切换
+      - {accept: "Control+space", toggle: ascii_mode, when: always}
+      #- {accept: "Control+Shift", toggle: ascii_mode, when: always}
