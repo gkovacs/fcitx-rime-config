@@ -5,8 +5,8 @@ var:
     simplification: false
   previously_selected_schema: colemak
   schema_access_time:
-    colemak: 1546725072
-    hannomPS: 1546644029
-    leimaau_jyutping: 1546721828
+    colemak: 1547771972
+    hannomPS: 1547073892
+    leimaau_jyutping: 1547771783
     leimaau_jyutping_nospaces: 1546569476
-    td_pinyin_flypy_jyutping: 1546725005
+    td_pinyin_flypy_jyutping: 1547771970
