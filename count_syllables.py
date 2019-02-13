@@ -126,18 +126,17 @@ for final in ['p', 't', 'k', 'ng']:
 # o/kw, a/w, aa/gw?
 
 # free initials (initially):
-# a u e i q r v x y
+# a u e i o q r v x y
 
 # e = k (final)
 # i = t (final)
 # u = p (final)
 # a = ng (final)
 
-# q = kw/o (initial)
+# q = kw (initial)
 # y = gw (initial)
-# r = aa (initial)
-
-# r still free and available! make it the null initial? / ng? 
+# r = ng (initial)
+# o = null initial
 
 # x = tone 4
 # v = tone 5
@@ -148,27 +147,42 @@ for final in ['p', 't', 'k', 'ng']:
 
 # a/yun aa aai aam aan aau ai am an au e en/on/n/oen i/ei in iu m/im o oei oi ou u/yu ui/oe un
 
-# a aa
-# r yun
-# d aai
-# ? aam
-# j aan
-# c aau
-# ? ai
-# ? am
-# f an
-# ? au
-# e e
-# n en/on/n/oen
+# q iu
+# w oe/ui
+# r aa
+# t ong (extra)
+# y un
+# u u/yu
 # i i/ei
-# b in
-# m m/im
 # o o
-# ? oe/ui
-# ? oei
-# ? oi
-# a ui oe
-# m im
+# p oi
+# a a/yun
+# s ung (extra)
+# d ai
+# f an
+# g am
+# h aam
+# j aan
+# k aai
+# l oeng (extra)
+# z ou
+# x au
+# c aau
+# v oei
+# b in
+# n en/on/n/oen
+# m m/im
+
+# the following need 3 strokes to be entered
+# finals that precede p
+# ru au iu u ['aap', 'ap', 'ip', 'p']
+# finals that precede t
+# ri ai ii wi oi i ui ui ['aat', 'at', 'it', 'oet', 'ot', 't', 'ut', 'yut']
+# finals that precede k
+# re ae ee ie e we oe ue ['aak', 'ak', 'ek', 'ik', 'k', 'oek', 'ok', 'uk']
+# finals that precede ng
+# ra aa ea ia/t a wa/l oa ua/s ['aang', 'ang', 'eng', 'ing', 'ng', 'oeng', 'ong', 'ung']
+
 
 # nearly non-occurring codas
 # i ei
