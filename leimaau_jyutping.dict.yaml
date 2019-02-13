@@ -103,7 +103,6 @@ use_preset_vocabulary: true
 㗨	aai2	
 诶	aai2	
 誒	aai2	0%
-矮	aai2	0%
 毐	aai2	0%
 嗄	aai3	0%
 䅬	aai3	
@@ -269,45 +268,6 @@ use_preset_vocabulary: true
 𤉶	aau4	
 𥁒	aau4	
 齩	aau5	
-𠼮	ai1	
-𠱓	ai1	0%
-繄	ai1	0%
-㶭	ai1	
-鷖	ai1	0%
-矮	ai2	
-欸	ai2	0%
-躷	ai2	
-蘙	ai3	
-𠫍	ai3	
-隘	ai3	3%
-阸	ai3	
-瘱	ai3	0%
-㿄	ai3	
-医	ai3	
-屓	ai3	
-嫕	ai3	
-哎	ai3	0%
-曀	ai3	
-屭	ai3	
-翳	ai3	
-缢	ai3	
-豷	ai3	
-贀	ai3	
-殪	ai3	0%
-瘞	ai3	0%
-䅬	ai3	
-瞖	ai3	
-縊	ai3	
-𤊓	ai4	
-䧧	ai5	
-鈘	ai5	
-𣫛	ai6	
-讛	ai6	
-𢏗	ai6	
-𠎵	ai6	
-𦐒	ai6	
-聣	ai6	
-艺	ai6	
 阨	ak1	
 阸	ak1	
 隘	ak1	0%
@@ -44592,7 +44552,6 @@ use_preset_vocabulary: true
 低產期	dai1 caan2 kei4
 低產量	dai1 caan2 loeng6
 低眉順眼	dai1 mei4 seon6 ngaan5
-低矮	dai1 ai2
 低矮	dai1 ngai2
 低空	dai1 hung1
 低空跳傘	dai1 hung1 tiu3 saan3
@@ -60981,14 +60940,12 @@ use_preset_vocabulary: true
 响處	hoeng2 syu3
 响邊度	hoeng2 bin1 dou6
 哎吔	aai1 jaa1
-哎吔	ai1 jaa3
+哎吔	aai1 jaa3
 哎吔吔	aai1 jaa1 jaa1
 哎呀	aai1 aa1
-哎呀	ai1 aa1
 哎呦	aai1 jau1
 哎唷	aai1 jo1
 哎喲	aai1 jo1
-哎喲	ai1 jo1
 哐哐啷啷	hong1 hong1 long1 long1
 哐啷	hong1 long1
 員外	jyun4 ngoi6
@@ -61148,7 +61105,7 @@ use_preset_vocabulary: true
 唉唉聲	aai4 aai2 seng1
 唉姐	aai1 ze2
 唉聲嘆氣	aai1 seng1 taan3 hei3
-唉聲歎氣	ai1 sing1 taan3 hei3
+唉聲歎氣	aai1 sing1 taan3 hei3
 唏哩嘩啦	hei1 li1 waa1 laa1
 唏噓	hei1 heoi1
 唐三藏	tong4 saam1 zong6
@@ -85779,7 +85736,7 @@ use_preset_vocabulary: true
 投籃機	tau4 laam4 gei1
 投緣	tau4 jyun4
 投繯	tau4 waan6
-投繯自縊	tau4 waan6 zi6 ai3
+投繯自縊	tau4 waan6 zi6 ngai3
 投考	tau4 haau2
 投胎	tau4 toi1
 投袂而起	tau4 mai6 ji4 hei2
@@ -99352,7 +99309,7 @@ use_preset_vocabulary: true
 棕熊	zung1 hung4
 棕眉山岩鷚	zung1 mei4 saan1 ngaam4 lau6
 棕眉柳鶯	zung1 mei4 lau5 ang1
-棕矮星	zung1 ai2 sing1
+棕矮星	zung1 ngai2 sing1
 棕紅	zung1 hung4
 棕編	zung1 pin1
 棕縛	zung1 bok3
@@ -117727,7 +117684,7 @@ use_preset_vocabulary: true
 白眼珠	baak6 ngaan5 zyu1
 白眼珠兒	baak6 ngaan5 zyu1 ji4
 白眼鵟鷹	baak6 ngaan5 kwong4 jing1
-白矮星	baak6 ai2 sing1
+白矮星	baak6 ngai2 sing1
 白石	baak6 sek6
 白石砬子	baak6 sek6 laa1 zi2
 白砂糖	baak6 saa1 tong4
@@ -120586,7 +120543,7 @@ use_preset_vocabulary: true
 短小精悍	dyun2 siu2 zing1 hon6
 短少	dyun2 siu2
 短尾信天翁	dyun2 mei5 seon3 tin1 jung1
-短尾矮袋鼠	dyun2 mei5 ai2 doi6 syu2
+短尾矮袋鼠	dyun2 mei5 ngai2 doi6 syu2
 短尾賊鷗	dyun2 mei5 caak6 au1
 短尾鴉雀	dyun2 mei5 aa1 zoek3
 短尾鷦鶥	dyun2 mei5 ziu1 mei4
@@ -120649,47 +120606,45 @@ use_preset_vocabulary: true
 短距離	dyun2 keoi5 lei4
 短路	dyun2 lou6
 短靴	dyun2 hoe1
-矮人	ai2 jan4
+矮人	ngai2 jan4
 矮仔	ngai2 zai2
 矮仔多計	ngai2 zai2 do1 gai3
-矮個兒	ai2 go3 ji4
-矮凳	ai2 dang3
+矮個兒	ngai2 go3 ji4
+矮凳	ngai2 dang3
 矮凳仔	ngai2 dang3 zai2
-矮凸凸	ai2 dat1 dat1
 矮凸凸	ngai2 dat1 dat1
-矮化	ai2 faa3
-矮半截	ai2 bun3 zit6
-矮呆病	ai2 ngoi4 beng6
-矮地茶	ai2 dei6 caa4
-矮墩墩	ai2 deon1 deon1
-矮壯素	ai2 zong3 sou3
-矮子	ai2 zi2
-矮子裡拔將軍	ai2 zi2 leoi5 bat6 zoeng1 gwan1
-矮小	ai2 siu2
+矮化	ngai2 faa3
+矮半截	ngai2 bun3 zit6
+矮呆病	ngai2 ngoi4 beng6
+矮地茶	ngai2 dei6 caa4
+矮墩墩	ngai2 deon1 deon1
+矮壯素	ngai2 zong3 sou3
+矮子	ngai2 zi2
+矮子裡拔將軍	ngai2 zi2 leoi5 bat6 zoeng1 gwan1
 矮小	ngai2 siu2
-矮小精悍	ai2 siu2 zing1 hon6
-矮星	ai2 sing1
-矮林	ai2 lam4
-矮桿品種	ai2 gon1 ban2 zung2
-矮楊梅	ai2 joeng4 mui4
-矮樹	ai2 syu6
-矮瓜	ai2 gwaa1
+矮小	ngai2 siu2
+矮小精悍	ngai2 siu2 zing1 hon6
+矮星	ngai2 sing1
+矮林	ngai2 lam4
+矮桿品種	ngai2 gon1 ban2 zung2
+矮楊梅	ngai2 joeng4 mui4
+矮樹	ngai2 syu6
 矮瓜	ngai2 gwaa1
-矮矮細細	ai2 ai2 sai3 sai3
+矮矮細細	ngai2 ngai2 sai3 sai3
 矮細	ngai2 sai3
-矮胖	ai2 bun6
-矮腯腯	ai2 dat1 dat1
-矮腳白花蛇利草	ai2 goek3 baak6 faa1 se4 lei6 cou2
-矮腳羅傘	ai2 goek3 lo4 saan3
-矮腳苦蒿	ai2 goek3 fu2 hou1
-矮莖朱砂根	ai2 ging3 zyu1 saa1 gan1
-矮行星	ai2 hang4 sing1
-矮躉	ai2 dan2
+矮胖	ngai2 bun6
+矮腯腯	ngai2 dat1 dat1
+矮腳白花蛇利草	ngai2 goek3 baak6 faa1 se4 lei6 cou2
+矮腳羅傘	ngai2 goek3 lo4 saan3
+矮腳苦蒿	ngai2 goek3 fu2 hou1
+矮莖朱砂根	ngai2 ging3 zyu1 saa1 gan1
+矮行星	ngai2 hang4 sing1
 矮躉	ngai2 dan2
-矮醜窮	ai2 cau2 kung4
-矮鹿	ai2 luk2
-矮黑人	ai2 hak1 jan4
-矮𠱂𠱂	ai2 dat1 dat1
+矮躉	ngai2 dan2
+矮醜窮	ngai2 cau2 kung4
+矮鹿	ngai2 luk2
+矮黑人	ngai2 hak1 jan4
+矮𠱂𠱂	ngai2 dat1 dat1
 矯健	giu2 gin6
 矯味劑	giu2 mei6 zai1
 矯形	giu2 jing4
@@ -125326,7 +125281,7 @@ use_preset_vocabulary: true
 紅眼病	hung4 ngaan5 beng6
 紅眼症	hung4 ngaan5 zing3
 紅眼鱒	hung4 ngaan5 zyun1
-紅矮星	hung4 ai2 sing1
+紅矮星	hung4 ngai2 sing1
 紅磚	hung4 zyun1
 紅磡	hung4 ham3
 紅磡海底隧道	hung4 ham3 hoi2 dai2 seoi6 dou6
@@ -126500,7 +126455,7 @@ use_preset_vocabulary: true
 絞盡腦汁	gaau2 zeon6 nou5 zap1
 絞盤	gaau2 pun4
 絞索	gaau2 sok3
-絞縊	gaau2 ai3
+絞縊	gaau2 ngai3
 絞纜	gaau2 laam6
 絞肉	gaau2 juk6
 絞肉機	gaau2 juk6 gei1
@@ -127450,9 +127405,9 @@ use_preset_vocabulary: true
 縉紳	zeon3 san1
 縉雲	zeon3 wan4
 縉雲縣	zeon3 wan4 jyun6
-縊死	ai3 sei2
-縊殺	ai3 saat3
-縊頸	ai3 geng2
+縊死	ngai3 sei2
+縊殺	ngai3 saat3
+縊頸	ngai3 geng2
 縐褶	zau3 zip3
 縝匝	can2 zaap3
 縝密	can2 mat6
@@ -128840,16 +128795,12 @@ use_preset_vocabulary: true
 翰林學士	hon6 lam4 hok6 si6
 翰林院	hon6 lam4 jyun2
 翱翔	ngou4 coeng4
-翳氣	ai3 hei3
 翳氣	ngai3 hei3
-翳滯	ai3 zai6
 翳滯	ngai3 zai6
-翳焗	ai3 guk6
 翳焗	ngai3 guk6
-翳熱	ai3 jit6
 翳熱	ngai3 jit6
-翳眼	ai3 ngaan5
-翳肺	ai3 fai3
+翳眼	ngai3 ngaan5
+翳肺	ngai3 fai3
 翹二郎腿	kiu4 ji6 long4 teoi2
 翹企	kiu4 kei5
 翹嘴鷸	kiu4 zeoi2 wat6
@@ -132841,7 +132792,6 @@ use_preset_vocabulary: true
 自給	zi6 kap1
 自給自足	zi6 kap1 zi6 zuk1
 自經	zi6 ging1
-自縊	zi6 ai3
 自縊	zi6 ngai3
 自縛手腳	zi6 bok3 sau2 goek3
 自繇自在	zi6 jau4 zi6 zoi6
@@ -162393,8 +162343,8 @@ use_preset_vocabulary: true
 高瞻遠矚	gou1 zim1 jyun5 zuk1
 高矗	gou1 cuk1
 高知縣	gou1 zi1 jyun6
-高矮	gou1 ai2
-高矮胖瘦	gou1 ai2 bun6 sau3
+高矮	gou1 ngai2
+高矮胖瘦	gou1 ngai2 bun6 sau3
 高碑店	gou1 bei1 dim3
 高碑店市	gou1 bei1 dim3 si5
 高祖	gou1 zou2
@@ -164817,7 +164767,7 @@ use_preset_vocabulary: true
 黑瞎子	hak1 hat6 zi2
 黑瞎子島	hak1 hat6 zi2 dou2
 黑短腳鵯	hak1 dyun2 goek3 bei1
-黑矮星	hak1 ai2 sing1
+黑矮星	hak1 ngai2 sing1
 黑磚窯	hak1 zyun1 jiu4
 黑社會	hak1 se5 wui2
 黑社會	hak1 se5 wui6
