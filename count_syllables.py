@@ -173,7 +173,7 @@ for final in ['p', 't', 'k', 'ng']:
 # n en/on/n/oen
 # m m/im
 
-# the following need 3 strokes to be entered
+# the following need 2 strokes to be entered (ones followed by slash have a single-key shortcut)
 # finals that precede p
 # ru au iu u ['aap', 'ap', 'ip', 'p']
 # finals that precede t
