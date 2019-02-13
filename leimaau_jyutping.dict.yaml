@@ -25415,9 +25415,6 @@ use_preset_vocabulary: true
 瓶	peng4	0%
 平	peng4	3%
 呯	peng4	0%
-噼	pet1	0%
-坺	pet6	0%
-噼	pet6	0%
 潎	pik1	
 澼	pik1	
 椑	pik1	
@@ -31562,7 +31559,6 @@ use_preset_vocabulary: true
 𠱥	we5	
 𠾭	we5	
 𨋍	wen1	
-𠿭	wet1	
 喴	wi1	
 窢	wik1	0%
 㵄	wik6	
@@ -35701,8 +35697,6 @@ use_preset_vocabulary: true
 䵮	zoeng6	
 丈	zoeng6	
 䴂	zoeng6	
-𠻘	zoet2	
-𠻘	zoet6	
 栽	zoi1	
 烖	zoi1	
 灾	zoi1	
@@ -37015,7 +37009,7 @@ use_preset_vocabulary: true
 一團漆黑	jat1 tyun4 cat1 hak1
 一團火	jat1 tyun4 fo2
 一團糟	jat1 tyun4 zou1
-一坺	jat1 pet6
+一坺	jat1 paat6
 一坺迾	jat1 paat6 laat6
 一堆	jat1 deoi1
 一場	jat1 coeng4
@@ -52583,7 +52577,6 @@ use_preset_vocabulary: true
 削價	soek3 gaa3
 削地	soek3 dei6
 削坺坺	soek3 paat6 paat6
-削坺坺	soek3 pet6 pet6
 削尖	soek3 zim1
 削平	soek3 ping4
 削弱	soek3 joek6
@@ -109259,7 +109252,7 @@ use_preset_vocabulary: true
 濕吻	sap1 man5
 濕地	sap1 dei6
 濕地公園	sap1 dei6 gung1 jyun2
-濕坺坺	sap1 pet6 pet6
+濕坺坺	sap1 paat6 paat6
 濕婆	sap1 po4
 濕巾	sap1 gan1
 濕度	sap1 dou6
@@ -124628,7 +124621,6 @@ use_preset_vocabulary: true
 籤條	cim1 tiu4
 籬垣	lei4 wun4
 籬笆	lei4 baa1
-籮噼	lo1 pet1
 籮底橙	lo4 dai2 caang2
 籮筐	lo4 hong1
 籲請	jyu6 cing2
@@ -129401,7 +129393,7 @@ use_preset_vocabulary: true
 老鼻子	lou5 bei6 zi2
 老齡	lou5 ling4
 老齡化	lou5 ling4 faa3
-老齧齧	lou5 nget6 nget6
+老齧齧	lou5 ngat6 ngat6
 考上	haau2 soeng5
 考中	haau2 zung3
 考克斯	haau2 hak1 si1
