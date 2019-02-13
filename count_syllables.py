@@ -89,7 +89,7 @@ for c in list('abcdefghijklmnopqrstuvwxyz') + ['aa', 'gw', 'kw', 'ng']:
     print('free initial! ' + c)
     continue
   valid_readings_complex = [x for x in valid_readings if is_complex_coda(x)]
-  valid_readings_noncomplex = [x for x in valid_readings if is_complex_coda(x)]
+  valid_readings_noncomplex = [x for x in valid_readings if not is_complex_coda(x)]
   codas_complex = [x[len(c):] for x in valid_readings_complex]
   codas = [x[len(c):] for x in valid_readings_noncomplex]
   for coda in codas:
@@ -101,6 +101,8 @@ for c in list('abcdefghijklmnopqrstuvwxyz') + ['aa', 'gw', 'kw', 'ng']:
       coda_cooccurrences.add(coda + ' ' + coda2)
   print(c + ' ' + str(len(valid_readings_noncomplex)))
   print(' '.join(valid_readings_noncomplex))
+  print(c + ' complex ' + str(len(valid_readings_complex)))
+  print(' '.join(valid_readings_complex))
 codas_list = sorted(list(codas_set))
 print(' '.join(codas_list))
 print(len(codas_list))
