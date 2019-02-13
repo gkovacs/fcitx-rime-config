@@ -152,12 +152,12 @@ for final in ['p', 't', 'k', 'ng']:
 # q iu
 # w oe/ui
 # r aa
-# t ong (extra)
+# t oi
 # y un
 # u u/yu
 # i i/ei
 # o o
-# p oi
+# p aang (extra)
 # a a/yun
 # s ung (extra)
 # d ai
@@ -166,7 +166,7 @@ for final in ['p', 't', 'k', 'ng']:
 # h aam
 # j aan
 # k aai
-# l oeng (extra)
+# l ong (extra)
 # z ou
 # x au
 # c aau
