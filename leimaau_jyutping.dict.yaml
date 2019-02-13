@@ -24294,7 +24294,6 @@ use_preset_vocabulary: true
 淰	nim2	0%
 撚	nim2	3%
 㘝	nim2	
-㩙	nim2	
 捻	nim2	
 蹨	nim3	
 拈	nim4	0%
@@ -26126,15 +26125,6 @@ use_preset_vocabulary: true
 舓	saai5	
 䛈	saai6	
 㳏	saai6	
-㩙	saak1	
-索	saak3	
-拺	saak3	
-栜	saak3	
-槭	saak3	
-摵	saak3	3%
-愬	saak3	
-𢱢	saak3	
-梀	saak3	0%
 鏒	saam1	0%
 钐	saam1	
 䂘	saam1	
@@ -39155,7 +39145,6 @@ use_preset_vocabulary: true
 不值一顧	bat1 zik6 jat1 gu3
 不值得	bat1 zik6 dak1
 不值錢	bat1 zik6 cin2
-不假思索	bat1 gaa2 si1 saak3
 不假思索	bat1 gaa2 si1 sok3
 不偏不倚	bat1 pin1 bat1 ji2
 不偏斜	bat1 pin1 ce4
@@ -43369,8 +43358,8 @@ use_preset_vocabulary: true
 人老精，鬼老靈	jan4 lou5 zeng1 gwai2 lou5 leng4
 人聲	jan4 seng1
 人聲鼎沸	jan4 sing1 ding2 fai3
-人肉搜索	jan4 juk6 sau2 saak3
-人肉搜索引擎	jan4 juk6 sau2 saak3 jan5 king4
+人肉搜索	jan4 juk6 sau2 sok3
+人肉搜索引擎	jan4 juk6 sau2 sok3 jan5 king4
 人肉炸彈	jan4 juk6 zaa3 daan2
 人脈	jan4 mak6
 人臣	jan4 san4
@@ -53804,7 +53793,6 @@ use_preset_vocabulary: true
 勒斯波斯島	lak6 si1 bo1 si1 dou2
 勒死	lak6 sei2
 勒殺	lak6 saat3
-勒索	lak6 saak3
 勒索	lak6 sok3
 勒索罪	lak6 sok3 zeoi6
 勒維夫	lak6 wai4 fu1
@@ -64871,7 +64859,7 @@ use_preset_vocabulary: true
 垂淚	seoi4 leoi6
 垂直	seoi4 zik6
 垂直和短距起落飛機	seoi4 zik6 wo4 dyun2 keoi5 hei2 lok6 fei1 gei1
-垂直搜索	seoi4 zik6 sau2 saak3
+垂直搜索	seoi4 zik6 sau2 sok3
 垂直線	seoi4 zik6 sin3
 垂直起落飛機	seoi4 zik6 hei2 lok6 fei1 gei1
 垂直軸	seoi4 zik6 zuk6
@@ -69193,7 +69181,7 @@ use_preset_vocabulary: true
 太祖	taai3 zou2
 太空	taai3 hung1
 太空人	taai3 hung1 jan4
-太空探索	taai3 hung1 taam3 saak3
+太空探索	taai3 hung1 taam3 sok3
 太空服	taai3 hung1 fuk6
 太空梭	taai3 hung1 so1
 太空步	taai3 hung1 bou6
@@ -87454,7 +87442,7 @@ use_preset_vocabulary: true
 按兵不動	on3 bing1 bat1 dung6
 按勞分配	on3 lou4 fan1 pui3
 按圖	on3 tou4
-按圖索驥	on3 tou4 saak3 kei3
+按圖索驥	on3 tou4 sok3 kei3
 按壓	on3 aat3
 按天	on3 tin1
 按季	on3 gwai3
@@ -88388,8 +88376,8 @@ use_preset_vocabulary: true
 探祕	taam3 bei3
 探究	taam3 gau3
 探究式	taam3 gau3 sik1
-探索	taam3 saak3
-探索性	taam3 saak3 sing3
+探索	taam3 sok3
+探索性	taam3 sok3 sing3
 探聽	taam3 ting1
 探花	taam3 faa1
 探見	taam3 gin3
@@ -88621,7 +88609,7 @@ use_preset_vocabulary: true
 推移	teoi1 ji4
 推究	teoi1 gau3
 推算	teoi1 syun3
-推索	teoi1 saak3
+推索	teoi1 sok3
 推翻	teoi1 faan1
 推脫	teoi1 tyut3
 推舉	teoi1 geoi2
@@ -89291,10 +89279,10 @@ use_preset_vocabulary: true
 搜狗	sau2 gau2
 搜獲	sau2 wok6
 搜神記	sau2 san4 gei3
-搜索	sau1 saak3
-搜索	sau2 saak3
-搜索引擎	sau2 saak3 jan5 king4
-搜索枯腸	sau2 saak3 fu1 coeng4
+搜索	sau1 sok3
+搜索	sau2 sok3
+搜索引擎	sau2 sok3 jan5 king4
+搜索枯腸	sau2 sok3 fu1 coeng4
 搜羅	sau2 lo4
 搜腸刮肚	sau2 coeng4 gwaat3 tou5
 搜證	sau2 zing3
@@ -89705,7 +89693,7 @@ use_preset_vocabulary: true
 摸牌	mo2 paai2
 摸盲盲	mo2 maang4 maang4
 摸石頭過河	mo2 sek6 tau4 gwo3 ho4
-摸索	mo2 saak3
+摸索	mo2 sok3
 摸脈	mo2 mak6
 摸著石頭過河	mo2 zoek6 sek6 tau4 gwo3 ho4
 摸象	mo2 zoeng6
@@ -100860,7 +100848,6 @@ use_preset_vocabulary: true
 檢疫	gim2 jik6
 檢疫所	gim2 jik6 so2
 檢疫站	gim2 jik6 zaam6
-檢索	gim2 saak3
 檢索	gim2 sok3
 檢胃鏡	gim2 wai6 geng3
 檢舉	gim2 geoi2
@@ -104056,7 +104043,7 @@ use_preset_vocabulary: true
 求神問卜	kau4 san4 man6 buk1
 求簽	kau4 cim1
 求籤	kau4 cim1
-求索	kau4 saak3
+求索	kau4 sok3
 求職	kau4 zik1
 求職信	kau4 zik1 seon3
 求職者	kau4 zik1 ze2
@@ -114180,7 +114167,7 @@ use_preset_vocabulary: true
 玩票	wun6 piu3
 玩笑	waan4 siu3
 玩笑	wun6 siu3
-玩索	wun6 saak3
+玩索	wun6 sok3
 玩者	wun6 ze2
 玩耍	waan4 saa2
 玩耍	wun6 saa2
@@ -125939,7 +125926,7 @@ use_preset_vocabulary: true
 索傑納	sok3 git6 naap6
 索價	sok3 gaa3
 索具裝置	sok3 geoi6 zong1 zi3
-索取	saak3 ceoi2
+索取	sok3 ceoi2
 索命	sok3 ming6
 索國	sok3 gwok3
 索多瑪	sok3 do1 maa5
@@ -125949,7 +125936,7 @@ use_preset_vocabulary: true
 索女	sok3 neoi5
 索尼	sok3 nei4
 索帶	sok3 daai2
-索引	saak3 jan5
+索引	sok3 jan5
 索性	sok3 sing3
 索戈拉特斯	sok3 gwo1 laai1 dak6 si1
 索普	sok3 pou2
@@ -125972,12 +125959,12 @@ use_preset_vocabulary: true
 索羅斯	sok3 lo4 si1
 索羅門	sok3 lo4 mun4
 索菲亞	sok3 fei1 aa3
-索要	saak3 jiu3
+索要	sok3 jiu3
 索解	sok3 gaai2
-索討	saak3 tou2
+索討	sok3 tou2
 索謝	sok3 ze6
 索賄	sok3 kui2
-索賠	saak3 pui4
+索賠	sok3 pui4
 索賠	sok3 pui4
 索道	sok3 dou6
 索邦大學	sok3 bong1 daai6 hok6
@@ -127785,7 +127772,7 @@ use_preset_vocabulary: true
 總算	zung2 syun3
 總管	zung2 gun2
 總管理處	zung2 gun2 lei5 cyu3
-總索引	zung2 saak3 jan5
+總索引	zung2 sok3 jan5
 總結	zung2 git3
 總統	zung2 tung2
 總統任期	zung2 tung2 jam6 kei4
@@ -133261,7 +133248,7 @@ use_preset_vocabulary: true
 興化市	hing1 faa3 si5
 興味	hing3 mei6
 興味無窮	hing3 mei6 mou4 kung4
-興味索然	hing3 mei6 saak3 jin4
+興味索然	hing3 mei6 sok3 jin4
 興和	hing1 wo4
 興和縣	hing1 wo4 jyun6
 興國	hing1 gwok3
@@ -142471,7 +142458,6 @@ use_preset_vocabulary: true
 追溯	zeoi1 sou3
 追究	zeoi1 gau3
 追究責任	zeoi1 gau3 zaak3 jam6
-追索	zeoi1 saak3
 追索	zeoi1 sok3
 追緝	zeoi1 cap1
 追繳	zeoi1 giu2
@@ -153734,7 +153720,7 @@ use_preset_vocabulary: true
 開大油門	hoi1 daai6 jau4 mun4
 開天窗	hoi1 tin1 coeng1
 開天索價	hoi1 tin1 sok3 gaa3
-開天索價，落地還錢	hoi1 tin1 saak3 lok6 dei6 waan4 cin4
+開天索價，落地還錢	hoi1 tin1 sok3 lok6 dei6 waan4 cin4
 開天辟地	hoi1 tin1 pik1 dei6
 開天避地	hoi1 tin1 bei6 dei6
 開天闢地	hoi1 tin1 pik1 dei6
