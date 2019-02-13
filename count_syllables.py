@@ -183,7 +183,7 @@ for final in ['p', 't', 'k', 'ng']:
 # finals that precede k
 # re ae ee ie e we oe ue ['aak', 'ak', 'ek', 'ik', 'k', 'oek', 'ok', 'uk']
 # finals that precede ng
-# ra aa ea ia/t a wa/l oa ua/s ['aang', 'ang', 'eng', 'ing', 'ng', 'oeng', 'ong', 'ung']
+# ra/p aa ea ia/t a wa oa/l ua/s ['aang', 'ang', 'eng', 'ing', 'ng', 'oeng', 'ong', 'ung']
 
 
 # nearly non-occurring codas
