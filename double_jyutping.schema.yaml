@@ -133,17 +133,17 @@ speller:
     - xform/(.)ou([1-6]?)$/$1Z$2/
     - xform/(.)o(t|k)?([1-6]?)$/$1O$2$3/
 
-    # # i codas
-    - xform/(.)in([1-6]?)$/$1B$2/
-    - xform/(.)iu([1-6]?)$/$1Q$2/
-    - xform/(.)i(p|t|k)?([1-6]?)$/$1I$2$3/
-
-    # # u and y codas
-    - xform/(.)yun([1-6]?)$/$1A$2/
+    # u and y codas
+    - xform/(.)yun([1-6]?)$/$1P$2/
     - xform/(.)un([1-6]?)$/$1Y$2/
     - xform/(.)yu(t)?([1-6]?)$/$1U$2$3/
     - xform/(.)ui([1-6]?)$/$1W$2/
     - xform/(.)u(t|k)?([1-6]?)$/$1U$2$3/
+
+    # i codas
+    - xform/(.)in([1-6]?)$/$1B$2/
+    - xform/(.)iu([1-6]?)$/$1Q$2/
+    - xform/(.)i(p|t|k)?([1-6]?)$/$1I$2$3/
 
     # # nasal codas part 2
     #- xform/(.)n([1-6]?)$/$1N$2/
