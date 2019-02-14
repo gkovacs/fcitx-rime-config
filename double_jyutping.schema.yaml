@@ -87,7 +87,7 @@ speller:
     - derive/^([a-z]+)[1-6]$/$1/
 
     # o is for null initials
-    - xform/^([aoe].*)([1-6]?)$/O$1$2/ # this line needs to be fixed
+    - xform/^([a|o|e|u|aa].*)([1-6]?)$/O$1$2/ # this line needs to be fixed
 
     # shorthands for ng endings
     - xform/aang([1-6]?)$/H$1/
