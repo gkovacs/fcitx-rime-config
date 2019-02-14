@@ -10,7 +10,7 @@
 #
 
 ---
-name: leimaau_jyutping
+name: leimaau_jyutping_nospaces
 version: "20180826"
 sort: by_weight	#original
 use_preset_vocabulary: true
