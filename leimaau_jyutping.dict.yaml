@@ -9504,6 +9504,8 @@ use_preset_vocabulary: true
 瞿	geoi6	0%
 醵	geoi6	
 鉅	geoi6	
+喼	gep1	0%
+夾	gep6	0%
 击	gik1	
 革	gik1	
 隔	gik1	3%
@@ -17338,6 +17340,7 @@ use_preset_vocabulary: true
 竘	keoi5	0%
 拒	keoi5	
 佢	keoi5	
+喼	kep1	0%
 𠵇	kiu4
 揢	kik1	
 𢲈	kik1	
@@ -33975,6 +33978,7 @@ use_preset_vocabulary: true
 㤕	zeot1	
 絀	zeot3	0%
 𠻘	zeot6	
+㗱	zep6	
 髭	zi1	
 鎡	zi1	
 锱	zi1	
@@ -50038,6 +50042,7 @@ use_preset_vocabulary: true
 公事	gung1 si6
 公事公辦	gung1 si6 gung1 baan6
 公事包	gung1 si6 baau1
+公事喼	gung1 si6 gep1
 公事喼	gung1 si6 gip1
 公事房	gung1 si6 fong4
 公交	gung1 gaau1
@@ -59593,6 +59598,7 @@ use_preset_vocabulary: true
 呋喃	fu1 naam4
 呋喃西林	fu1 naam4 sai1 lam4
 呔令	taai1 ling1
+呔夾	taai1 gep6
 呔針	taai1 zam1
 呢D	nei4 di1
 呢位	nei4 wai6
@@ -62627,6 +62633,7 @@ use_preset_vocabulary: true
 喺邊度	hai2 bin1 dou6
 喺門角落頭燒炮仗	hai2 mun4 gok3 lok1 tau2 siu1 paau3 zoeng2
 喻世明言	jyu6 sai3 ming4 jin4
+喼帽	gep1 mou6
 喼帽	gip1 mou2
 喼汁	gip1 zap1
 喼頓	gip1 deon6
@@ -69477,6 +69484,7 @@ use_preset_vocabulary: true
 夾口供	gaap3 hau2 gung1
 夾埋	gaap3 maai4
 夾塞兒	gaap3 sak1 ji4
+夾娃娃	gep6 waa1 waa1
 夾子	gaap3 zi2
 夾尾巴	gaap3 mei5 baa1
 夾屋	gaap3 uk1
@@ -69493,6 +69501,7 @@ use_preset_vocabulary: true
 夾持	gaap3 ci4
 夾擊	gaap3 gik1
 夾攻	gaap3 gung1
+夾斷	gep6 tyun5
 夾板	gaap3 baan2
 夾板氣	gaap3 baan2 hei3
 夾棍	gaap3 gwan3
@@ -69512,6 +69521,7 @@ use_preset_vocabulary: true
 夾縫	gaap3 fung4
 夾肢窩	gaap3 zi1 wo1
 夾腳	gip6 goek3
+夾腳拖鞋	gep6 goek3 to1 haai2
 夾萬	gaap3 maan6
 夾衲	gaap3 naap6
 夾被	gaap3 pei5
@@ -87696,6 +87706,7 @@ use_preset_vocabulary: true
 挾持	hip6 ci4
 挾持雇主	hip6 ci4 gu3 zyu2
 挾細拿粗	hip6 sai3 naa4 cou1
+挾腳	gep6 goek3
 挾腳	gip6 goek3
 挾製	hip6 zai3
 挾親	gip6 can1
@@ -136523,6 +136534,7 @@ use_preset_vocabulary: true
 藝術體操	ngai6 seot6 tai2 cou1
 藞䕢	laa5 zaa2
 藠頭	kiu2 tau4
+藤喼	tang4 gep1
 藤喼	tang4 gip1
 藤喼耳	tang4 gip1 ji5
 藤本植物	tang4 bun2 zik6 mat6
@@ -151753,6 +151765,7 @@ use_preset_vocabulary: true
 防城港市	fong4 sing4 gong2 si5
 防城縣	fong4 sing4 jyun6
 防堵	fong4 dou2
+防夾	fong4 gep6
 防守	fong4 sau2
 防守者	fong4 sau2 ze2
 防寒服	fong4 hon4 fuk6
@@ -159053,6 +159066,7 @@ use_preset_vocabulary: true
 頂多	ding2 do1
 頂天立地	ding2 tin1 laap6 dei6
 頂夸克	deng2 kwaa1 hak1
+頂夾	deng2 gep6
 頂夾	ding2 gaap2
 頂好	ding2 hou2
 頂客	ding2 haak3
@@ -159486,6 +159500,7 @@ use_preset_vocabulary: true
 頭城鎮	tau4 sing4 zan3
 頭大	tau4 daai6
 頭大冇腦	tau4 daai6 mou5 nou5
+頭夾	tau4 gep2
 頭套	tau4 tou3
 頭婄	tau4 pau3
 頭子	tau4 zi2
@@ -162988,6 +163003,7 @@ use_preset_vocabulary: true
 魚子	jyu4 zi2
 魚子醬	jyu4 zi2 zoeng3
 魚尾	jyu4 mei5
+魚尾夾	jyu4 mei5 gep2
 魚尾板	jyu4 mei5 baan2
 魚尾紋	jyu4 mei5 man4
 魚峰	jyu4 fung1
