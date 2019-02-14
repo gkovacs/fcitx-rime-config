@@ -7504,6 +7504,8 @@ use_preset_vocabulary: true
 剕	fei6	
 狒	fei6	3%
 𠱥	fik1	
+捹	fing3	
+捹	fing6	
 覅	fiu3	
 匚	fo1	
 棵	fo1	0%
@@ -41878,7 +41880,9 @@ use_preset_vocabulary: true
 亂抄	lyun6 caau3
 亂抓	lyun6 zaau2
 亂掉	lyun6 diu6
+亂揈	lyun6 fing6
 亂揈	lyun6 gwang1
+亂揈錢	lyun6 fing6 cin2
 亂搞	lyun6 gaau2
 亂搞男女關係	lyun6 gaau2 naam4 neoi5 gwaan1 hai6
 亂撞	lyun6 zong6
@@ -58577,7 +58581,9 @@ use_preset_vocabulary: true
 吊兒郎當	diu3 ji4 long4 dong1
 吊具	diu3 geoi6
 吊卷	diu3 gyun2
+吊吊扔	diu3 diu3 fing4
 吊吊揈	diu3 diu3 fang4
+吊吊揈	diu4 diu2 fing6
 吊味	diu3 mei6
 吊命	diu3 meng6
 吊唁	diu3 jin6
@@ -88759,6 +88765,8 @@ use_preset_vocabulary: true
 揀飲擇食	gaan2 jam2 zaak6 sik6
 揄揚	jyu4 joeng4
 揄袂	jyu4 mai6
+揈頭	fing6 tau4
+揈頭丸	fing6 tau4 jyun2
 揉制	jau4 zai3
 揉合	jau4 hap6
 揉和	jau4 wo4
@@ -134948,6 +134956,7 @@ use_preset_vocabulary: true
 荷倌	ho4 gun1
 荷包	ho4 baau1
 荷包亂揈	ho4 baau1 lyun2 fang6
+荷包亂揈	ho4 baau1 lyun2 fing6
 荷包仔	ho4 baau1 zai2
 荷包倒吊	ho4 baau1 dou3 diu3
 荷包友	ho4 baau1 jau2
@@ -159545,6 +159554,7 @@ use_preset_vocabulary: true
 頭房	tau4 fong2
 頭掂	tau4 dim6
 頭揈揈	tau4 fang4 fang4
+頭揈揈	tau4 fing6 fing6
 頭擋	tau4 dong3
 頭擰擰	tau4 ning6 ning6
 頭文字	tau4 man4 zi6
@@ -165686,6 +165696,7 @@ use_preset_vocabulary: true
 𢃇	lei5
 𢆡	nin1
 𢆡罅	nin1 laa3
+𢫕頭	fing6 tau2
 𢯎痕	ngaau1 han4
 𢱑子	waa2 zi2
 𢱕	dap6
