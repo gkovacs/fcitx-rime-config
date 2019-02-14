@@ -1,0 +1,279 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: double_jyutping
+  name: "粵雙拼"
+  version: "20180428"
+  author:
+    - LeiMaau
+  description: |
+    採用『香港語言學會粵語拼音方案』
+    聲調輸入 q平 v上 x去 （雙擊爲陽調）
+    提供多種字體轉換方案
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  #- name: simplification
+  #  states: [ 漢字, 汉字 ]
+  - options: [zh_simp, zh_tw ]
+    reset: 0
+    states:
+      - 汉字
+      - 漢字
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - affix_segmentor@pinyin_lookup
+    - affix_segmentor@putonghua_to_jyutping_lookup
+    - affix_segmentor@jyutping_to_putonghua_lookup
+    - affix_segmentor@jyutping_to_stroke_lookup
+    - affix_segmentor@hannom_lookup
+    - affix_segmentor@kanji_lookup
+    - affix_segmentor@hanja_lookup
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+    - reverse_lookup_translator
+    - script_translator@pinyin_lookup
+    - script_translator@putonghua_to_jyutping_lookup
+    - script_translator@jyutping_to_putonghua_lookup
+    - script_translator@jyutping_to_stroke_lookup
+    - script_translator@hannom_lookup
+    - script_translator@kanji_lookup
+    - script_translator@hanja_lookup
+  filters:
+    - simplifier@zh_simp
+    #- simplifier@zh_simp2
+    #- simplifier@zh_trad
+    - simplifier@zh_tw
+    #- simplifier@zh_tw
+    #- simplifier@zh_jp
+    - uniquifier
+    - reverse_lookup_filter@pinyin_reverse_lookup
+    - reverse_lookup_filter@putonghua_to_jyutping_reverse_lookup
+    - reverse_lookup_filter@jyutping_to_putonghua_reverse_lookup
+    - reverse_lookup_filter@jyutping_to_stroke_reverse_lookup
+    - reverse_lookup_filter@hannom_reverse_lookup
+    - reverse_lookup_filter@kanji_reverse_lookup
+    - reverse_lookup_filter@hanja_reverse_lookup
+
+speller:
+  alphabet: 'zyxwvutsrqponmlkjihgfedcba;/,.'
+  initials: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+    - erase/^xx$/
+    - derive/^([a-z]+)[1-6]$/$1/
+
+    # o is for null initials
+    - xform/^([aoe].*)([1-6]?)$/O$1$2/ # this line needs to be fixed
+
+    # shorthands for ng endings
+    - xform/aang([1-6]?)$/H$1/
+    - xform/ang([1-6]?)$/G$1/
+    - xform/oeng([1-6]?)$/9$1/
+    - xform/ing([1-6]?)$/8$1/
+    - xform/eng([1-6]?)$/À$1/
+    - xform/ong([1-6]?)$/L$1/
+    - xform/ung([1-6]?)$/S$1/
+
+    # shorthand i => ei
+    - xform/(^[bpmfdnlgkh])ei([1-6]?)$/$1I$2/
+
+    # codas not ending in ng/p/t/k
+
+    # aa codas
+    - xform/(.)aau([1-6]?)$/$1C$2/
+    - xform/(.)aam([1-6]?)$/$1È$2/
+    - xform/(.)aan([1-6]?)$/$1J$2/
+    - xform/(.)aai([1-6]?)$/$1K$2/
+    - xform/(.)aa(ng|p|t|k)?([1-6]?)$/$1R$2$3/
+
+    # a codas
+    - xform/(.)ai([1-6]?)$/$1D$2/
+    - xform/(.)an([1-6]?)$/$1F$2/
+    - xform/(.)am([1-6]?)$/$1A$2/
+    - xform/(.)au([1-6]?)$/$1X$2/
+
+    # nasal codas
+    - xform/(.)eon([1-6]?)$/$1N$2/
+    - xform/(.)on([1-6]?)$/$1N$2/
+    - xform/(.)en([1-6]?)$/$1N$2/
+    - xform/(.)oen([1-6]?)$/$1N$2/
+    - xform/(.)on([1-6]?)$/$1N$2/
+    - xform/(.)im([1-6]?)$/$1M$2/
+    - xform/(.)m([1-6]?)$/$1M$2/
+
+    # # o codas
+    - xform/(.)eoi([1-6]?)$/$1V$2/
+    - xform/(.)oi([1-6]?)$/$1T$2/
+    - xform/(.)oe(t|k)?([1-6]?)$/$1W$2$3/
+    - xform/(.)eo(t|k)?([1-6]?)$/$1W$2$3/
+    - xform/(.)ou([1-6]?)$/$1Z$2/
+    - xform/(.)o(t|k)?([1-6]?)$/$1O$2$3/
+
+    # # i codas
+    - xform/(.)in([1-6]?)$/$1B$2/
+    - xform/(.)iu([1-6]?)$/$1Q$2/
+    - xform/(.)i(p|t|k)?([1-6]?)$/$1I$2$3/
+
+    # # u and y codas
+    - xform/(.)yun([1-6]?)$/$1A$2/
+    - xform/(.)un([1-6]?)$/$1Y$2/
+    - xform/(.)yu(t)?([1-6]?)$/$1U$2$3/
+    - xform/(.)ui([1-6]?)$/$1W$2/
+    - xform/(.)u(t|k)?([1-6]?)$/$1U$2$3/
+
+    # # nasal codas part 2
+    #- xform/(.)n([1-6]?)$/$1N$2/
+
+    # initials: kw=Q, gw=Y, ng=R
+    - xform/^kw/Q/
+    - xform/^gw/Y/
+    - xform/^ng/R/
+    # finals: k=e, t=i, p=u. a=ng
+    - xform/(.)(.)p([1-6]?)$/$1$2U$3/
+    - xform/(.)(.)t([1-6]?)$/$1$2E$3/
+    - xform/(.)(.)k([1-6]?)$/$1$2I$3/
+    #- xform/ng([1-6]?)$/A$1/
+
+    # other initials
+    - xform/^w/W/
+    - xform/^t/T/
+    - xform/^p/P/
+    - xform/^s/S/
+    - xform/^d/D/
+    - xform/^f/F/
+    - xform/^h/H/
+    - xform/^j/J/
+    - xform/^k/K/
+    - xform/^l/L/
+    - xform/^z/Z/
+    - xform/^c/C/
+    - xform/^b/B/
+    - xform/^n/N/
+    - xform/^m/M/
+
+    - xlit/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/
+    - 'xform È ;'
+    - 'xform 8 ,'
+    - 'xform 9 .'
+    - 'xform À /'
+    - 'xform 1 ;'
+    - 'xform 2 /'
+    - 'xform 3 ,'
+    - 'xform 6 \.'
+    - 'xform 5 v'
+    - 'xform 4 x'
+
+menu:
+  alternative_select_keys: "123456789"
+  page_size: 9
+
+translator:
+  dictionary: leimaau_jyutping
+  spelling_hints: 9
+  prism: double_jyutping
+  preedit_format:
+    #- xform/([aeioumngptk])qq/$1⁴/
+    #- xform/([aeioumngptk])q/$1¹/
+    #- xform/([aeioumngptk])vv/$1⁵/
+    #- xform/([aeioumngptk])v/$1²/
+    #- xform/([aeioumngptk])xx/$1⁶/
+    #- xform/([aeioumngptk])x/$1³/
+    # - 'xform ([aeioumngptkqrwy]); $1¹'
+    # - 'xform ([aeioumngptkqrwy])x $1⁴'
+    # - 'xform ([aeioumngptkqrwy])/ $1²'
+    # - 'xform ([aeioumngptkqrwy])\. $1⁶'
+    # - 'xform ([aeioumngptkqrwy]), $1³'
+    # - 'xform ([aeioumngptkqrwy])v $1⁵'
+    #- 'xform r aa'
+    #- 'xform q ng'
+
+#reverse_lookup:
+#  dictionary: luna_pinyin
+#  prefix: "`"
+#  suffix: "'"
+#  tips: 〔反查〕
+#  preedit_format:
+#    - xform/([nljqxy])v/$1ü/
+#    - xform/([nl])ue/$1üe/
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
+  bindings:
+    - {accept: "Control+Shift+f", toggle: zh_simp, when: always}
+    - {accept: "Control+Shift+F", toggle: zh_simp, when: always}
+    - {accept: "Control+Shift+t", toggle: zh_tw, when: always}
+    - {accept: "Control+Shift+T", toggle: zh_tw, when: always}
+
+recognizer:
+  patterns:
+    email: "^[a-z][-_.0-9a-z]*@.*$"
+    uppercase: "^[A-Z][-_+.'0-9A-Za-z]*$"
+    url: "^(www[.]|https?:|ftp:|mailto:).*$"
+    #reverse_lookup: "`[a-z]*;?$"
+    pinyin_lookup: "`J[a-z;/,.]*`?$"
+    putonghua_to_jyutping_lookup: "`[a-z;/,.]*`?$"
+    jyutping_to_putonghua_lookup: "`Y[a-z;/,.]*`?$"
+    jyutping_to_stroke_lookup: "`S[a-z;/,.]*`?$"
+    reverse_lookup: "`H[a-z]*`?$"
+    hannom_lookup: "`V[a-z]*?$"
+    kanji_lookup: "`N[a-z]*?$"
+    hanja_lookup: "`K[a-z]*?$"
+    punct: ^/[0-9]?[a-z]*$
+
+
+zh_simp:
+  option_name: zh_simp
+  opencc_config: t2s.json
+  tips: none
+  
+#zh_simp2:
+#  option_name: zh_simp2
+#  opencc_config: t2s.json
+#  tips: all
+  
+#zh_trad:
+#  option_name: zh_trad
+#  opencc_config: s2t.json
+#  tips: all
+
+zh_tw:
+  option_name: zh_tw
+  opencc_config: t2tw.json
+  tips: none
+
+#zh_tw:
+#  option_name: zh_tw
+#  opencc_config: t2tw.json
+#  tips: all
+
+#zh_jp:
+#  option_name: zh_jp
+#  opencc_config: t2jp.json
+#  tips: all
