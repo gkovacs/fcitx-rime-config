@@ -9,7 +9,7 @@ patch:
     - schema: td_pinyin_flypy_jyutping
     #- schema: td_pinyin_flypy          # 朙月拼音
     - schema: double_jyutping
-    - schema: leimaau_jyutping
+    #- schema: leimaau_jyutping
     - schema: hangyl
     #- schema: hangyl_hanja
     - schema: nihongo-hybrid

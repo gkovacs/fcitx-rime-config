@@ -3,8 +3,8 @@ ascii_composer:
   switch_key:
     Shift_L: noop
     Shift_R: noop
-config_version: 0.35.custom.435599397
-customization: 435599397
+config_version: 0.35.custom.334319188
+customization: 334319188
 key_binder:
   bindings:
     - {accept: "Control+p", send: Up, when: composing}
@@ -122,7 +122,6 @@ recognizer:
 schema_list:
   - schema: td_pinyin_flypy_jyutping
   - schema: double_jyutping
-  - schema: leimaau_jyutping
   - schema: hangyl
   - schema: "nihongo-hybrid"
   - schema: hannomPS
