@@ -6745,6 +6745,14 @@ use_preset_vocabulary: true
 夺	dyut6	
 㣞	dyut6	
 敚	dyut6	
+𡃀	e4	
+欸	e6	0%
+㖡	e6	
+誒	e6	
+欸	ei3	
+诶	ei6	
+誒	ei6	0%
+欸	ei6	3%
 㩛	faa1	
 㳸	faa1	
 化	faa1	3%
@@ -30559,7 +30567,21 @@ use_preset_vocabulary: true
 梲	tyut3	
 棁	tyut3	
 挩	tyut3	
+䁷	uk1	
 屋	uk1	
+剭	uk1	
+𡃵	ung1	
+壅	ung1	3%
+擁	ung2	3%
+㧬	ung2	
+𡃵	ung2	
+𢫨	ung2	
+罋	ung3	0%
+蕹	ung3	
+齆	ung3	
+䐥	ung3	
+甕	ung3	
+瓮	ung3	
 㖞	waa1	
 蜗	waa1	
 䠵	waa1	
@@ -60894,6 +60916,8 @@ use_preset_vocabulary: true
 哄瞞	hung6 mun4
 哄笑	hung6 siu3
 哄騙	hung6 pin3
+哆啦A夢	do1 laa1 amung6
+哆啦A夢	do1 laa1 ei1 mung6
 哆嗦	do1 so1
 哆囉美遠	do1 lo4 mei5 jyun5
 哆囉美遠族	do1 lo4 mei5 jyun5 zuk6
@@ -63497,6 +63521,7 @@ use_preset_vocabulary: true
 固體物理	gu3 tai2 mat6 lei5
 固體物質	gu3 tai2 mat6 zat1
 圃鵐	pou2 mou4
+圈a	hyun1 ei1
 圈中人	hyun1 zung1 jan4
 圈內	hyun1 noi6
 圈圈	hyun1 hyun1
@@ -67705,7 +67730,7 @@ use_preset_vocabulary: true
 好過	hou2 gwo3
 好過冇	hou2 gwo3 mou5
 好道	hou2 dou6
-好酒沉甕底	hou2 zau2 cam4 ngung3 dai2
+好酒沉甕底	hou2 zau2 cam4 ung3 dai2
 好酒貪杯	hou2 zau2 taam1 bui1
 好醜	hou2 cau2
 好野	hou2 je5
@@ -103757,7 +103782,7 @@ use_preset_vocabulary: true
 水蒲葦鶯	seoi2 pou4 wai5 ang1
 水蒸氣	seoi2 zing1 hei3
 水蒸汽	seoi2 zing1 hei3
-水蕹菜	seoi2 ngung3 coi3
+水蕹菜	seoi2 ung3 coi3
 水藻	seoi2 zou2
 水蘿蔔	seoi2 lo4 baak6
 水虎魚	seoi2 fu2 jyu2
@@ -115032,16 +115057,17 @@ use_preset_vocabulary: true
 甄陶	jan1 tou4
 甌海	au1 hoi2
 甌海區	au1 hoi2 keoi1
-甕中之鱉	ngung3 zung1 zi1 bit3
-甕中捉鱉	ngung3 zung1 zuk3 bit3
-甕城	ngung3 sing4
-甕安	ngung3 on1
-甕安縣	ngung3 on1 jyun6
-甕棺	ngung3 gun1
-甕棺葬	ngung3 gun1 zong3
+甕中之鱉	ung3 zung1 zi1 bit3
+甕中捉鱉	ung3 zung1 zuk3 bit3
+甕城	ung3 sing4
+甕安	ung3 on1
+甕安縣	ung3 on1 jyun6
+甕棺	ung3 gun1
+甕棺葬	ung3 gun1 zong3
 甕缸	ngung3 gong1
-甕聲甕氣	ngung3 seng1 ngung3 hei3
-甕菜	ngung3 coi3
+甕缸	ung3 gong1
+甕聲甕氣	ung3 seng1 ung3 hei3
+甕菜	ung3 coi3
 甘丹寺	gam1 daan1 zi2
 甘之如飴	gam1 zi1 jyu4 ji4
 甘井子區	gam1 zeng2 zi2 keoi1
@@ -115244,6 +115270,7 @@ use_preset_vocabulary: true
 生埗	sang1 bou2
 生境	sang1 ging2
 生壅	saang1 ngung1
+生壅	saang1 ung1
 生奶油	sang1 naai5 jau4
 生如夏花	sang1 jyu4 haa6 faa1
 生子	saang1 zi2
@@ -116466,6 +116493,7 @@ use_preset_vocabulary: true
 異端	ji6 dyun1
 異端者	ji6 dyun1 ze2
 異端邪說	ji6 dyun1 ce4 syut3
+異維A酸	ji6 wai4 ei1 syun1
 異義	ji6 ji6
 異能	ji6 nang4
 異腈	ji6 cing1
@@ -131263,7 +131291,8 @@ use_preset_vocabulary: true
 蕭蕭	siu1 siu1
 蕭規曹隨	siu1 kwai1 cou4 ceoi4
 蕭邦	siu1 bong1
-蕹菜	ngung3 coi3
+蕹菜	ngong3 coi3
+蕹菜	ung3 coi3
 蕺菜	cap1 coi3
 蕾哈娜	leoi5 haa1 no5
 蕾絲	leoi4 si1
@@ -136210,7 +136239,7 @@ use_preset_vocabulary: true
 蓬安縣	pung4 on1 jyun6
 蓬心	pung4 sam1
 蓬戶	pung4 wu6
-蓬戶甕牖	pung4 wu6 ngung3 jau5
+蓬戶甕牖	pung4 wu6 ung3 jau5
 蓬散	pung4 saan3
 蓬江	pung4 gong1
 蓬江區	pung4 gong1 keoi1
@@ -141202,6 +141231,8 @@ use_preset_vocabulary: true
 認頭	jing6 tau4
 認養	jing6 joeng5
 誑語	gwong2 jyu5
+誒笑	e6 siu3
+誒詒	e6 ji4
 誓不兩立	sai6 bat1 loeng5 laap6
 誓不反悔	sai6 bat1 faan2 fui3
 誓不罷休	sai6 bat1 baa6 jau1
@@ -141649,7 +141680,7 @@ use_preset_vocabulary: true
 請勿吸煙	cing2 mat6 kap1 jin1
 請勿打擾	ceng2 mat6 daa2 jiu5
 請勿打擾	cing2 mat6 daa2 jiu5
-請君入甕	cing2 gwan1 jap6 ngung3
+請君入甕	cing2 gwan1 jap6 ung3
 請命	cing2 ming6
 請問	ceng2 man6
 請問	cing2 man6
@@ -161969,7 +162000,7 @@ use_preset_vocabulary: true
 骨氣	gwat1 hei3
 骨法	gwat1 faat3
 骨灰	gwat1 fui1
-骨灰甕	gwat1 fui1 ngung3
+骨灰甕	gwat1 fui1 ung3
 骨灰盒	gwat1 fui1 hap2
 骨灰罈	gwat1 fui1 taam3
 骨灰龕	gwat1 fui1 ham1
