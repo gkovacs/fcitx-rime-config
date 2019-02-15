@@ -92,8 +92,13 @@ speller:
     - erase/^xx$/
     - derive/^([a-z]+)[1-6]$/$1/
 
-    # o is for null initials
-    - xform/^([a|o|e|u|aa].*)([1-6]?)$/O$1$2/ # this line needs to be fixed
+    # aa is for ng
+    - xform/^ng([1-6]?)$/AA$1/
+    # mm is for m
+    - xform/^m([1-6]?)$/MM$1/
+
+    # r is for null initials
+    - xform/^([a|o|e|u|aa].*)([1-6]?)$/E$1$2/ # this line needs to be fixed
 
     # shorthands for ng endings
     - xform/(.)aang([1-6]?)$/$1H$2/
@@ -161,13 +166,13 @@ speller:
     # # nasal codas part 2
     #- xform/(.)n([1-6]?)$/$1N$2/
 
-    # initials: kw=Q, gw=Y, ng=R
-    - xform/^kw/Q/
-    - xform/^gw/Y/
-    - xform/^ng/R/
-    # finals: k=e, t=i, p=u. a=ng
-    - xform/(.)(.)p([1-6]?)$/$1$2U$3/
-    - xform/(.)(.)t([1-6]?)$/$1$2E$3/
+    # initials: kw=Y, gw=U, ng=R
+    - xform/^kw/Y/
+    - xform/^gw/U/
+    - xform/^ng/A/
+    # finals: p=o, t=r, k=i
+    - xform/(.)(.)p([1-6]?)$/$1$2O$3/
+    - xform/(.)(.)t([1-6]?)$/$1$2R$3/
     - xform/(.)(.)k([1-6]?)$/$1$2I$3/
     #- xform/ng([1-6]?)$/A$1/
 
