@@ -357,7 +357,7 @@ pinyin_lookup:
 
 putonghua_to_jyutping_lookup:
   tag: putonghua_to_jyutping_lookup
-  prefix: "q"  # 獨用jyutping_lookup反查在反查鍵「`」之後再鍵入〔大寫〕「J」
+  prefix: "&"  # 獨用jyutping_lookup反查在反查鍵「`」之後再鍵入〔大寫〕「J」
   suffix: "`"
   dictionary: terra_pinyin.extended
   prism: td_pinyin_flypy
@@ -709,6 +709,8 @@ key_binder:
     - {accept: "Control+Shift+F", toggle: zh_simp, when: always}
     - {accept: "Control+Shift+t", toggle: zh_tw, when: always}
     - {accept: "Control+Shift+T", toggle: zh_tw, when: always}
+    - {accept: "q", send: q, when: composing}
+    - {accept: "q", send: "&", when: always}
 
 recognizer:
   patterns:
@@ -717,7 +719,7 @@ recognizer:
     url: "^(www[.]|https?:|ftp:|mailto:).*$"
     #reverse_lookup: "`[a-z]*;?$"
     pinyin_lookup: "`[a-z;/,.]*`?$"
-    putonghua_to_jyutping_lookup: "q[a-z;/,.]*`?$"
+    putonghua_to_jyutping_lookup: "&[a-z;/,.]*`?$"
     jyutping_to_putonghua_lookup: "`Y[a-z;/,.]*`?$"
     jyutping_to_stroke_lookup: "`S[a-z;/,.]*`?$"
     reverse_lookup: "`H[a-z]*`?$"
