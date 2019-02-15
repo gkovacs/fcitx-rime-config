@@ -287,7 +287,7 @@ jyutping_to_stroke_lookup:
 
 pinyin_lookup:
   tag: pinyin_lookup
-  prefix: "`J"  # 獨用jyutping_lookup反查在反查鍵「`」之後再鍵入〔大寫〕「J」
+  prefix: "`"  # 獨用jyutping_lookup反查在反查鍵「`」之後再鍵入〔大寫〕「J」
   suffix: "`"
   dictionary: terra_pinyin.extended
   prism: td_pinyin_flypy
@@ -357,7 +357,7 @@ pinyin_lookup:
 
 putonghua_to_jyutping_lookup:
   tag: putonghua_to_jyutping_lookup
-  prefix: "`"  # 獨用jyutping_lookup反查在反查鍵「`」之後再鍵入〔大寫〕「J」
+  prefix: "q"  # 獨用jyutping_lookup反查在反查鍵「`」之後再鍵入〔大寫〕「J」
   suffix: "`"
   dictionary: terra_pinyin.extended
   prism: td_pinyin_flypy
@@ -716,8 +716,8 @@ recognizer:
     uppercase: "^[A-Z][-_+.'0-9A-Za-z]*$"
     url: "^(www[.]|https?:|ftp:|mailto:).*$"
     #reverse_lookup: "`[a-z]*;?$"
-    pinyin_lookup: "`J[a-z;/,.]*`?$"
-    putonghua_to_jyutping_lookup: "`[a-z;/,.]*`?$"
+    pinyin_lookup: "`[a-z;/,.]*`?$"
+    putonghua_to_jyutping_lookup: "q[a-z;/,.]*`?$"
     jyutping_to_putonghua_lookup: "`Y[a-z;/,.]*`?$"
     jyutping_to_stroke_lookup: "`S[a-z;/,.]*`?$"
     reverse_lookup: "`H[a-z]*`?$"
