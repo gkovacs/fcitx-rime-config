@@ -3,8 +3,8 @@ ascii_composer:
   switch_key:
     Shift_L: noop
     Shift_R: noop
-config_version: 0.35.custom.334319188
-customization: 334319188
+config_version: 0.35.custom.1863708181
+customization: 1863708181
 key_binder:
   bindings:
     - {accept: "Control+p", send: Up, when: composing}
@@ -36,14 +36,10 @@ key_binder:
     - {accept: "Control+Shift+dollar", toggle: simplification, when: always}
     - {accept: "Control+Shift+percent", toggle: extended_charset, when: always}
     - {accept: "Control+period", toggle: ascii_punct, when: always}
-    - {accept: "Control+Shift+z", select: .next, when: always}
-    - {accept: "Control+Shift+Z", select: .next, when: always}
     - {accept: "Control+Shift+a", toggle: ascii_mode, when: always}
     - {accept: "Control+Shift+A", toggle: ascii_mode, when: always}
-    - {accept: "Control+Shift+space", select: .next, when: always}
     - {accept: "Shift+space", toggle: noop, when: always}
     - {accept: "Control+space", toggle: ascii_mode, when: always}
-    - {accept: F35, select: .next, when: always}
 menu:
   page_size: 9
 punctuator:

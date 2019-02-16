@@ -719,6 +719,8 @@ key_binder:
     - {accept: "Control+Shift+F", toggle: zh_simp, when: always}
     - {accept: "Control+Shift+t", toggle: zh_tw, when: always}
     - {accept: "Control+Shift+T", toggle: zh_tw, when: always}
+    - {accept: "Control+Shift+space", select: double_jyutping, when: always}
+    - {accept: "F35", select: colemak, when: always}
 
 recognizer:
   patterns:

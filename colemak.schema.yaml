@@ -12,7 +12,7 @@ schema:
 
 switches:
   - name: ascii_mode
-    reset: 0
+    #reset: 0
     states: [ 中文, 西文 ]
   - name: full_shape
     states: [ 半角, 全角 ]
@@ -135,7 +135,3 @@ key_binder:
     - {accept: "Control+Shift+F", toggle: simplification, when: always}
     - {accept: "Control+Shift+t", toggle: simplification, when: always}
     - {accept: "Control+Shift+T", toggle: simplification, when: always}
-    #- {accept: "space", send: "Control+Shift+Return", when: composing}
-    - {accept: "space", send: "Shift+Return", when: composing}
-    - {accept: ";", send: "space", when: composing}
-    #- {accept: "Return", send: "space", when: composing}
