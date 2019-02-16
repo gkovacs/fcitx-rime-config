@@ -2,13 +2,13 @@
 # encoding: utf-8
 
 schema:
-  schema_id: colemak
-  name: colemak
+  schema_id: qwerty
+  name: qwerty
   version: "0.10"
   author:
     - Geza Kovacs gkovacs.com
   description: |
-    colemak
+    qwerty
 
 switches:
   - name: ascii_mode
@@ -59,75 +59,75 @@ engine:
 
 punctuator:
   half_shape: &symtable
-    'e': f
-    'r': p
-    't': g
-    'y': j
-    'u': l
-    'i': u
-    'o': y
-    'p': ';'
-    's': r
-    'd': s
-    'f': t
-    'g': d
-    'j': n
-    'k': e
-    'l': i
-    ';': o
-    'n': k
-    'E': F
-    'R': P
-    'T': G
-    'Y': J
-    'U': L
-    'I': U
-    'O': Y
-    'P': ':'
-    'S': R
-    'D': S
-    'F': T
-    'G': D
-    'J': N
-    'K': E
-    'L': I
-    ':': O
-    'N': K
+    'e': e
+    'r': r
+    't': t
+    'y': y
+    'u': u
+    'i': i
+    'o': o
+    'p': p
+    's': s
+    'd': d
+    'f': f
+    'g': g
+    'j': j
+    'k': k
+    'l': l
+    ';': ';'
+    'n': n
+    'E': E
+    'R': R
+    'T': T
+    'Y': Y
+    'U': U
+    'I': I
+    'O': O
+    'P': P
+    'S': S
+    'D': D
+    'F': F
+    'G': G
+    'J': J
+    'K': K
+    'L': L
+    ':': ':'
+    'N': N
   full_shape: &symtable
-    'e': f
-    'r': p
-    't': g
-    'y': j
-    'u': l
-    'i': u
-    'o': y
-    'p': ';'
-    's': r
-    'd': s
-    'f': t
-    'g': d
-    'j': n
-    'k': e
-    'l': i
-    ';': o
-    'n': k
-    'E': F
-    'R': P
-    'T': G
-    'Y': J
-    'U': L
-    'I': U
-    'O': Y
-    'P': ':'
-    'S': R
-    'D': S
-    'F': T
-    'G': D
-    'J': N
-    'K': E
-    'L': I
-    ':': O
-    'N': K
+    'e': e
+    'r': r
+    't': t
+    'y': y
+    'u': u
+    'i': i
+    'o': o
+    'p': p
+    's': s
+    'd': d
+    'f': f
+    'g': g
+    'j': j
+    'k': k
+    'l': l
+    ';': ';'
+    'n': n
+    'E': E
+    'R': R
+    'T': T
+    'Y': Y
+    'U': U
+    'I': I
+    'O': O
+    'P': P
+    'S': S
+    'D': D
+    'F': F
+    'G': G
+    'J': J
+    'K': K
+    'L': L
+    ':': ':'
+    'N': N
 
 key_binder:
   import_preset: default
@@ -136,6 +136,7 @@ key_binder:
     - {accept: "Control+Shift+F", toggle: simplification, when: always}
     - {accept: "Control+Shift+t", toggle: simplification, when: always}
     - {accept: "Control+Shift+T", toggle: simplification, when: always}
-    - {accept: "Control+Shift+space", select: qwerty, when: always}
-    - {accept: "Control+space", select: td_pinyin_flypy_jyutping_colemak, when: always}
-    - {accept: "F35", select: double_jyutping_colemak, when: always}
+    - {accept: "Control+Shift+space", select: colemak, when: always}
+    - {accept: "Control+space", select: td_pinyin_flypy_jyutping, when: always}
+    - {accept: "F35", select: double_jyutping, when: always}
+    - {accept: "Alt+space", select: double_jyutping, when: always}
