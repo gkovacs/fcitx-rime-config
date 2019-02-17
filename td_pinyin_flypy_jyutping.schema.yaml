@@ -3,7 +3,7 @@
 
 schema:
   schema_id: td_pinyin_flypy_jyutping
-  name: 小鶴雙粵拼
+  name: 小鶴雙拼
   version: "0.1"
   author:
     - double pinyin layout by 鶴
