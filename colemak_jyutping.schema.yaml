@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 schema:
-  schema_id: colemak
-  name: colemak
+  schema_id: colemak_jyutping
+  name: colemak_jyutping
   version: "0.10"
   author:
     - Geza Kovacs gkovacs.com
@@ -136,7 +136,7 @@ key_binder:
     - {accept: "Control+Shift+F", toggle: simplification, when: always}
     - {accept: "Control+Shift+t", toggle: simplification, when: always}
     - {accept: "Control+Shift+T", toggle: simplification, when: always}
-    - {accept: "Control+Shift+space", select: qwerty, when: always}
-    - {accept: "Control+space", select: td_pinyin_flypy_jyutping_colemak, when: always}
-    - {accept: "F35", select: double_jyutping_colemak, when: always}
-    - {accept: "Alt+space", select: double_jyutping_colemak, when: always}
+    - {accept: "Control+Shift+space", select: qwerty_jyutping, when: always}
+    - {accept: "Control+space", select: double_jyutping_colemak, when: always}
+    - {accept: "F35", select: td_pinyin_flypy_jyutping_colemak, when: always}
+    - {accept: "Alt+space", select: td_pinyin_flypy_jyutping_colemak, when: always}

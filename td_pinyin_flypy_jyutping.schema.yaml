@@ -723,6 +723,7 @@ key_binder:
     - {accept: "Control+Shift+space", select: colemak, when: always}
     - {accept: "Control+space", select: qwerty, when: always}
     - {accept: "F35", select: double_jyutping, when: always}
+    - {accept: "Alt+space", select: double_jyutping, when: always}
 
 recognizer:
   patterns:

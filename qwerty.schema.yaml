@@ -139,3 +139,4 @@ key_binder:
     - {accept: "Control+Shift+space", select: colemak, when: always}
     - {accept: "Control+space", select: td_pinyin_flypy_jyutping, when: always}
     - {accept: "F35", select: double_jyutping, when: always}
+    - {accept: "Alt+space", select: double_jyutping, when: always}

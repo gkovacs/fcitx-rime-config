@@ -715,6 +715,7 @@ key_binder:
     - {accept: "Control+Shift+space", select: qwerty_jyutping, when: always}
     - {accept: "Control+space", select: colemak_jyutping, when: always}
     - {accept: "F35", select: td_pinyin_flypy_jyutping_colemak, when: always}
+    - {accept: "Alt+space", select: td_pinyin_flypy_jyutping_colemak, when: always}
 
 recognizer:
   patterns:
