@@ -111,10 +111,10 @@ speller:
     - xform/(.)ung([1-6]?)$/$1S$2/
 
     # shorthand i => ei
-    # w => ei for s (d n l added for convenience)
+    # w => ei for s n d (l added for convenience)
     - derive/^(s|d|n|l)ei([1-6]?)$/$1W$2/
-    # i => for all others
-    - xform/^(b|d|f|g|h|k|l|m|n|p|gw)ei([1-6]?)$/$1I$2/
+    # i => ei for all others (except si ni di)
+    - xform/^(b|f|g|h|k|l|m|p|gw)ei([1-6]?)$/$1I$2/
 
     # codas not ending in ng/p/t/k
 
