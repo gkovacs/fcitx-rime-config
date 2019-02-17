@@ -33,7 +33,7 @@ def clone_schema(schema_name):
     return generate_jyutping_display()
   return get_base_schema(schema_name)
 
-def generate_key_binder(basename, switchname, isqwerty):
+def generate_key_binder(basename, newname, switchname, isqwerty):
   binding_base = yaml.load('''
   - {accept: "Control+Shift+f", toggle: zh_simp, when: always}
   - {accept: "Control+Shift+F", toggle: zh_simp, when: always}
@@ -41,19 +41,22 @@ def generate_key_binder(basename, switchname, isqwerty):
   - {accept: "Control+Shift+T", toggle: zh_tw, when: always}
   ''')
   nb = []
+  if basename == 'double_jyutping':
+    nb.append({'accept': 'q', 'send': 'q', 'when': 'composing'})
+    nb.append({'accept': 'q', 'send': '&', 'when': 'always'})
   if isqwerty:
-    nb.append({'accept': 'Control+Shift+space', 'select': 'colemak_' + basename, 'when': 'always'})
-    nb.append({'accept': 'Control+space', 'select': 'qwerty_' + basename, 'when': 'always'})
+    nb.append({'accept': 'Control+Shift+space', 'select': 'colemak_' + newname, 'when': 'always'})
+    nb.append({'accept': 'Control+space', 'select': 'qwerty_' + newname, 'when': 'always'})
     nb.append({'accept': 'F35', 'select': switchname, 'when': 'always'})
     nb.append({'accept': 'Alt+space', 'select': switchname, 'when': 'always'})
   else:
-    nb.append({'accept': 'Control+Shift+space', 'select': 'qwerty_' + basename, 'when': 'always'})
-    nb.append({'accept': 'Control+space', 'select': 'colemak_' + basename, 'when': 'always'})
+    nb.append({'accept': 'Control+Shift+space', 'select': 'qwerty_' + newname, 'when': 'always'})
+    nb.append({'accept': 'Control+space', 'select': 'colemak_' + newname, 'when': 'always'})
     nb.append({'accept': 'F35', 'select': switchname + '_colemak', 'when': 'always'})
     nb.append({'accept': 'Alt+space', 'select': switchname + '_colemak', 'when': 'always'})
   return binding_base + nb
 
-def generate_key_binder_qwertycolemak(basename, switchname, isqwerty):
+def generate_key_binder_qwertycolemak(basename, newname, switchname, isqwerty):
   binding_base = yaml.load('''
   - {accept: "Control+Shift+f", toggle: zh_simp, when: always}
   - {accept: "Control+Shift+F", toggle: zh_simp, when: always}
@@ -86,9 +89,9 @@ def generate_schema(basename, newname, switchname, isqwerty):
       out['schema']['schema_id'] = newname + '_colemak'
       #out['schema']['name'] = newname + '_' + newname
   if basename == 'qwerty' or basename == 'colemak':
-    out['key_binder']['bindings'] = generate_key_binder_qwertycolemak(newname, switchname, isqwerty)
+    out['key_binder']['bindings'] = generate_key_binder_qwertycolemak(basename, newname, switchname, isqwerty)
   else:
-    out['key_binder']['bindings'] = generate_key_binder(newname, switchname, isqwerty)
+    out['key_binder']['bindings'] = generate_key_binder(basename, newname, switchname, isqwerty)
   return out
 
 def write_schema(basename, newname, switchname, isqwerty):
