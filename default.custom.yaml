@@ -7,6 +7,7 @@
 patch:
   schema_list:
     - schema: td_pinyin_flypy_jyutping
+    - schema: td_pinyin_flypy_jyutping_display
     #- schema: td_pinyin_flypy          # 朙月拼音
     - schema: double_jyutping
     #- schema: leimaau_jyutping
@@ -14,7 +15,7 @@ patch:
     #- schema: hangyl_hanja
     - schema: nihongo-hybrid
     - schema: hannomPS
-    - schema: colemak
+    #- schema: colemak
     #- schema: qwerty
     #- schema: roma_kr
     #- schema: stoke

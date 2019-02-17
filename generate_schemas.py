@@ -1,0 +1,125 @@
+#!/usr/bin/env python3
+
+import json
+
+from ruamel.yaml import YAML
+from ruamel.yaml.reader import Reader
+
+yaml = YAML(typ='safe')
+
+def strip_invalid(s):
+  res = ''
+  for x in s:
+    if Reader.NON_PRINTABLE.match(x):
+      # res += '\\x{:x}'.format(ord(x))
+      continue
+    res += x
+  return res
+
+def get_base_schema(schema_name):
+  return yaml.load(strip_invalid(open(schema_name + '_base.yaml', 'rt').read()))
+
+def generate_jyutping_display():
+  out = clone_schema('td_pinyin_flypy_jyutping')
+  del out['speller']
+  del out['translator']
+  out['schema']['name'] = '小鶴雙拼（粵）'
+  out['schema']['schema_id'] = 'td_pinyin_flypy_jyutping_display'
+  out['recognizer']['patterns']['putonghua_to_jyutping_lookup'] = "^[a-z;/,.]*$"
+  return out
+
+def clone_schema(schema_name):
+  if schema_name == 'td_pinyin_flypy_jyutping_display':
+    return generate_jyutping_display()
+  return get_base_schema(schema_name)
+
+def generate_key_binder(basename, switchname, isqwerty):
+  binding_base = yaml.load('''
+  - {accept: "Control+Shift+f", toggle: zh_simp, when: always}
+  - {accept: "Control+Shift+F", toggle: zh_simp, when: always}
+  - {accept: "Control+Shift+t", toggle: zh_tw, when: always}
+  - {accept: "Control+Shift+T", toggle: zh_tw, when: always}
+  ''')
+  nb = []
+  if isqwerty:
+    nb.append({'accept': 'Control+Shift+space', 'select': 'colemak_' + basename, 'when': 'always'})
+    nb.append({'accept': 'Control+space', 'select': 'qwerty_' + basename, 'when': 'always'})
+    nb.append({'accept': 'F35', 'select': switchname, 'when': 'always'})
+    nb.append({'accept': 'Alt+space', 'select': switchname, 'when': 'always'})
+  else:
+    nb.append({'accept': 'Control+Shift+space', 'select': 'qwerty_' + basename, 'when': 'always'})
+    nb.append({'accept': 'Control+space', 'select': 'colemak_' + basename, 'when': 'always'})
+    nb.append({'accept': 'F35', 'select': switchname + '_colemak', 'when': 'always'})
+    nb.append({'accept': 'Alt+space', 'select': switchname + '_colemak', 'when': 'always'})
+  return binding_base + nb
+
+def generate_key_binder_qwertycolemak(basename, switchname, isqwerty):
+  binding_base = yaml.load('''
+  - {accept: "Control+Shift+f", toggle: zh_simp, when: always}
+  - {accept: "Control+Shift+F", toggle: zh_simp, when: always}
+  - {accept: "Control+Shift+t", toggle: zh_tw, when: always}
+  - {accept: "Control+Shift+T", toggle: zh_tw, when: always}
+  ''')
+  nb = []
+  if isqwerty:
+    nb.append({'accept': 'Control+Shift+space', 'select': 'colemak_' + basename, 'when': 'always'})
+    nb.append({'accept': 'Control+space', 'select': basename, 'when': 'always'})
+    nb.append({'accept': 'F35', 'select': switchname, 'when': 'always'})
+    nb.append({'accept': 'Alt+space', 'select': switchname, 'when': 'always'})
+  else:
+    nb.append({'accept': 'Control+Shift+space', 'select': 'qwerty_' + basename, 'when': 'always'})
+    nb.append({'accept': 'Control+space', 'select': basename + '_colemak', 'when': 'always'})
+    nb.append({'accept': 'F35', 'select': switchname + '_colemak', 'when': 'always'})
+    nb.append({'accept': 'Alt+space', 'select': switchname + '_colemak', 'when': 'always'})
+  return binding_base + nb
+
+def generate_schema(basename, newname, switchname, isqwerty):
+  out = clone_schema(basename)
+  if basename == 'qwerty' or basename == 'colemak':
+    out['schema']['schema_id'] = basename + '_' + newname
+    #out['schema']['name'] = basename + '_' + newname
+  else:
+    if isqwerty:
+      out['schema']['schema_id'] = newname
+      #out['schema']['name'] = newname
+    else:
+      out['schema']['schema_id'] = newname + '_colemak'
+      #out['schema']['name'] = newname + '_' + newname
+  if basename == 'qwerty' or basename == 'colemak':
+    out['key_binder']['bindings'] = generate_key_binder_qwertycolemak(newname, switchname, isqwerty)
+  else:
+    out['key_binder']['bindings'] = generate_key_binder(newname, switchname, isqwerty)
+  return out
+
+def write_schema(basename, newname, switchname, isqwerty):
+  out = generate_schema(basename, newname, switchname, isqwerty)
+  if basename == 'qwerty':
+    filename = 'qwerty_' + newname + '.schema.yaml'
+  elif basename == 'colemak':
+    filename = 'colemak_' + newname + '.schema.yaml'
+  else:
+    if isqwerty:
+      filename = newname + '.schema.yaml'
+    else:
+      filename = newname + '_colemak.schema.yaml'
+  outf = open(filename, 'wt')
+  outf.write(json.dumps(out, ensure_ascii=False, indent=2))
+  outf.close()
+
+def write_schemas(basename1, basename2, name1, name2):
+  pairs = [
+    [basename1, name1, name2, True],
+    [basename1, name1, name2, False],
+    [basename2, name2, name1, True],
+    [basename2, name2, name1, False],
+    ['qwerty', name1, name2, True],
+    ['qwerty', name2, name1, True],
+    ['colemak', name1, name2, False],
+    ['colemak', name2, name1, False],
+  ]
+  for [bn,nn,sn,iq] in pairs:
+    write_schema(bn, nn, sn, iq)
+
+write_schemas('td_pinyin_flypy_jyutping', 'double_jyutping', 'td_pinyin_flypy_jyutping', 'double_jyutping')
+write_schemas('td_pinyin_flypy_jyutping_display', 'double_jyutping', 'td_pinyin_flypy_jyutping_display', 'double_jyutping_display')
+
