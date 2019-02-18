@@ -62,6 +62,13 @@ def get_first_of_all(l):
       output.append(x)
   return output
 
+@memoize
+def get_word_to_jyutping():
+  output = {}
+  for word,jyut in get_word_and_pinyin_in_dictionary('leimaau_jyutping.dict.yaml'):
+    output[word] = jyut
+  return output
+
 def get_jyutping(word):
   jyut = jyutping.get(word)
   all_yue = get_all_yue(word)
@@ -69,7 +76,10 @@ def get_jyutping(word):
     return ''.join(all_yue[0]).strip().replace(' ', '')
   if jyut != None and None not in jyut:
     return ''.join(get_first_of_all(jyut)).strip().replace(' ', '')
-  return None    
+  word_to_jyutping = get_word_to_jyutping()
+  if word in word_to_jyutping:
+    return word_to_jyutping[word]
+  return None
 
 def get_header_in_dictionary(dictfile):
   lines = open(dictfile).readlines()
@@ -182,9 +192,8 @@ def get_word_list():
   output = []
   output_set = set()
   dictionaries = list_dictionaries()
+  dictionaries.append('leimaau_jyutping')
   for dictionary_name in dictionaries:
-    #if dictionary_name.startswith('terra_pinyin'):
-    #  continue
     dictfile = dictionary_name + '.dict.yaml'
     for item in get_word_and_pinyin_in_dictionary(dictfile):
       word = item[0]
@@ -228,6 +237,9 @@ def main():
 
 main()
 #print(pinyin_to_zhuyin('lve4'))
+#print(get_jyutping('為'))
+#print(get_jyutping('爲'))
+#print(get_jyutping('为'))
 #print(get_jyutping('丷'))
 #print(pinyin_to_zhuyin('o'))
 #print(pinyin_to_zhuyin('O'))
