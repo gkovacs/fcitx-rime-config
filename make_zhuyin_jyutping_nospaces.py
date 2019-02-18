@@ -1,3 +1,5 @@
+import sys
+
 from memoize import memoize
 import pinyin
 import jyutping
@@ -15,15 +17,15 @@ use_preset_vocabulary: true
 ...
 '''
 
-def print_header():
-  print(header_text)
+def print_header(name, outfile=sys.stdout):
+  print(header_text.replace('leimaau_jyutping_zhuyin_nospaces', name), file=outfile)
 
 def is_valid_pinyin(pin):
   alpha = 'abcdefghijklmnopqrstuvwxyz'
   alphabet = alpha + alpha.upper()
-  all_valid = alphabet + '12345' + ''
+  all_valid = alphabet + '12345' + ' '
   for c in pin:
-    if not c in 'abcdefghijklmnopqrstuvwxyz':
+    if not c in all_valid:
       return False
   return True
 
@@ -47,7 +49,9 @@ def get_zhuyin(word):
   pin = pinyin.get(word, format='numerical', delimiter=' ')
   if is_valid_pinyin(pin):
     return pinyin_to_zhuyin(pin).strip().replace(' ', '')
-  return get_zhuyin_base(word)
+  zhu = get_zhuyin_base(word)
+  if zhu != None:
+    return zhu
 
 def get_first_of_all(l):
   output = []
@@ -60,14 +64,12 @@ def get_first_of_all(l):
 
 def get_jyutping(word):
   jyut = jyutping.get(word)
-  if jyut == None or None in jyut:
-    all_yue = get_all_yue(word)
-    if len(all_yue) > 0:
-      return ''.join(all_yue[0]).strip().replace(' ', '')
-    else:
-      return None
-  else:
+  all_yue = get_all_yue(word)
+  if len(all_yue) > 0:
+    return ''.join(all_yue[0]).strip().replace(' ', '')
+  if jyut != None and None not in jyut:
     return ''.join(get_first_of_all(jyut)).strip().replace(' ', '')
+  return None    
 
 def get_header_in_dictionary(dictfile):
   lines = open(dictfile).readlines()
@@ -117,7 +119,7 @@ def get_words_in_dictionary(dictfile):
     output.append(x)
   return output
 
-def print_with_pronunciation(word, pin=None):
+def print_with_pronunciation(word, pin=None, outfile=sys.stdout):
   if pin == None:
     zhu = get_zhuyin(word)
   else:
@@ -133,7 +135,26 @@ def print_with_pronunciation(word, pin=None):
     pronunciation = jyut
   else:
     return
-  print(word + '\t' + ''.join(pronunciation))
+  print(word + '\t' + ''.join(pronunciation), file=outfile)
+
+def print_with_pronunciation_zhu(word, pin=None, outfile=sys.stdout):
+  if pin == None:
+    zhu = get_zhuyin(word)
+  else:
+    zhu = pinyin_to_zhuyin(pin).strip()
+  if zhu != None:
+    pronunciation = zhu
+  else:
+    return
+  print(word + '\t' + ''.join(pronunciation), file=outfile)
+
+def print_with_pronunciation_jyut(word, pin=None, outfile=sys.stdout):
+  jyut = get_jyutping(word)
+  if jyut != None:
+    pronunciation = jyut
+  else:
+    return
+  print(word + '\t' + ''.join(pronunciation), file=outfile)
 
 def list_dictionaries():
   dictionaries = '''
@@ -184,10 +205,26 @@ def get_word_list():
 def main():
   #for x in get_header_in_dictionary('terra_pinyin.dict.yaml'):
   #  print(x, end='')
-  print_header()
-
+  outfile = open('leimaau_jyutping_zhuyin_nospaces.dict.yaml', 'wt')
+  print_header('leimaau_jyutping_zhuyin_nospaces', outfile=outfile)
   for word in get_word_list():
-    print_with_pronunciation(word)
+    print_with_pronunciation(word, outfile=outfile)
+  outfile.close()
+  outfile = open('terra_pinyin_nospaces.dict.yaml', 'wt')
+  print_header('terra_pinyin_nospaces', outfile=outfile)
+  for word in get_word_list():
+    print_with_pronunciation_zhu(word, outfile=outfile)
+  outfile.close()
+  outfile = open('terra_pinyin_nospaces.extended.dict.yaml', 'wt')
+  print_header('terra_pinyin_nospaces.extended', outfile=outfile)
+  for word in get_word_list():
+    print_with_pronunciation_zhu(word, outfile=outfile)
+  outfile.close()
+  outfile = open('leimaau_jyutping_nospaces.dict.yaml', 'wt')
+  print_header('leimaau_jyutping_nospaces', outfile=outfile)
+  for word in get_word_list():
+    print_with_pronunciation_jyut(word, outfile=outfile)
+  outfile.close()
 
 main()
 #print(pinyin_to_zhuyin('lve4'))
@@ -195,3 +232,7 @@ main()
 #print(pinyin_to_zhuyin('o'))
 #print(pinyin_to_zhuyin('O'))
 #print_with_pronunciation('二丁目')
+#print(get_zhuyin('大家好'))
+#print(get_jyutping('什么'))
+#print(get_zhuyin_base('大家好'))
+#print(is_valid_pinyin(pinyin.get('大家好', format='numerical', delimiter=' ')))
