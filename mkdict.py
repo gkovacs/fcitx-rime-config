@@ -173,6 +173,7 @@ def pinyin_to_zhuyin_real(pinyin):
   if pinyin in leave_unchanged:
     return pinyin
   mappings = {
+    'yo': 'ㄧㄛ',
     'yo1': 'ㄧㄛ',
     'yo2': 'ㄧㄛˊ',
     'yo3': 'ㄧㄛˇ',

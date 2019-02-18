@@ -1,4 +1,7 @@
+#!/usr/bin/env python3
+
 import sys
+from collections import Counter
 
 from memoize import memoize
 import pinyin
@@ -30,28 +33,75 @@ def is_valid_pinyin(pin):
   return True
 
 @memoize
-def get_word_to_zhuyin():
+def get_word_to_zhuyin_list2():
   output = {}
   for item in get_merged_entries():
     zhu = item['zhu']
+    zhu = zhu.strip().replace(' ', '')
     trad = item['trad']
     simp = item['simp']
-    output[trad] = zhu
-    output[simp] = zhu
+    if trad not in output:
+      output[trad] = []
+    output[trad].append(zhu)
+    if trad != simp:
+      if simp not in output:
+        output[simp] = []
+      output[simp].append(zhu)
   return output
 
-def get_zhuyin_base(word):
-  word_to_zhuyin = get_word_to_zhuyin()
-  if word in word_to_zhuyin:
-    return word_to_zhuyin[word].strip().replace(' ', '')
+@memoize
+def get_word_to_zhuyin_list():
+  output = {}
+  for word,pin in get_word_and_pinyin_in_dictionary('terra_pinyin.dict.yaml'):
+    zhu = pinyin_to_zhuyin(pin.strip()).strip().replace(' ', '')
+    if word not in output:
+      output[word] = []
+    output[word].append(zhu)
+  return output
+
+def get_all_zhuyin(word):
+  output = []
+  word_to_zhuyin_list = get_word_to_zhuyin_list()
+  word_to_zhuyin_list2 = get_word_to_zhuyin_list2()
+  if word in word_to_zhuyin_list:
+    output.extend(word_to_zhuyin_list[word])
+  if word in word_to_zhuyin_list2:
+    output.extend(word_to_zhuyin_list2[word])
+  pin = pinyin.get(word, format='numerical', delimiter=' ').strip()
+  if is_valid_pinyin(pin) and (len(output) == 0 or len(output) > 1):
+    output.insert(0, pinyin_to_zhuyin(pin).strip().replace(' ', ''))
+  return output
+
+def get_most_common(item_list):
+  counts = Counter(item_list)
+  maxcount = max(counts.values())
+  for item in item_list:
+    count = counts[item]
+    if count == maxcount:
+      return item
 
 def get_zhuyin(word):
-  pin = pinyin.get(word, format='numerical', delimiter=' ')
-  if is_valid_pinyin(pin):
-    return pinyin_to_zhuyin(pin).strip().replace(' ', '')
-  zhu = get_zhuyin_base(word)
-  if zhu != None:
-    return zhu
+  all_zhuyin = get_all_zhuyin(word)
+  if len(all_zhuyin) > 0:
+    return get_most_common(all_zhuyin)
+
+def is_unambiguous(item_list):
+  for x in item_list:
+    if type(x) == type([]):
+      return False
+  return True
+
+def get_all_jyutping(word):
+  output = []
+  output.extend(get_all_yue(word))
+  word_to_jyutping_list = get_word_to_jyutping_list()
+  if word in word_to_jyutping_list:
+    output.extend(word_to_jyutping_list[word])
+  jyut = jyutping.get(word)
+  if jyut != None and None not in jyut:
+    if is_unambiguous(jyut) and (len(output) == 0 or len(output) > 1):
+      output.insert(0, ''.join(get_first_of_all(jyut)).strip().replace(' ', ''))
+  return [x.strip().replace(' ', '') for x in output]
 
 def get_first_of_all(l):
   output = []
@@ -63,23 +113,18 @@ def get_first_of_all(l):
   return output
 
 @memoize
-def get_word_to_jyutping():
+def get_word_to_jyutping_list():
   output = {}
   for word,jyut in get_word_and_pinyin_in_dictionary('leimaau_jyutping.dict.yaml'):
-    output[word] = jyut
+    if word not in output:
+      output[word] = []
+    output[word].append(jyut)
   return output
 
 def get_jyutping(word):
-  jyut = jyutping.get(word)
-  all_yue = get_all_yue(word)
-  if len(all_yue) > 0:
-    return ''.join(all_yue[0]).strip().replace(' ', '')
-  if jyut != None and None not in jyut:
-    return ''.join(get_first_of_all(jyut)).strip().replace(' ', '')
-  word_to_jyutping = get_word_to_jyutping()
-  if word in word_to_jyutping:
-    return word_to_jyutping[word]
-  return None
+  all_jyutping = get_all_jyutping(word)
+  if len(all_jyutping) > 0:
+    return get_most_common(all_jyutping)
 
 def get_header_in_dictionary(dictfile):
   lines = open(dictfile).readlines()
@@ -236,6 +281,28 @@ def main():
   outfile.close()
 
 main()
+#print(get_zhuyin_base('垃圾'))
+#print(pinyin.get('垃圾', format='numerical', delimiter=' '))
+# print(get_all_zhuyin('垃圾'))
+# print(get_all_jyutping('什么'))
+# print(get_all_zhuyin('说'))
+# print(get_all_jyutping('说'))
+#print(get_all_zhuyin('垃圾'))
+#print(get_word_to_zhuyin_list()['垃圾'])
+#print(get_word_to_zhuyin_list2()['垃圾'])
+# for item in get_merged_entries():
+#   zhu = item['zhu']
+#   zhu = zhu.strip().replace(' ', '')
+#   trad = item['trad']
+#   simp = item['simp']
+#   if trad == '大家好' or simp == '大家好':
+#     print(item)
+#     sys.exit()
+# print(get_word_to_zhuyin_list()['大家好'])
+#print(get_word_to_zhuyin_list2()['大家好'])
+#print(get_word_to_zhuyin_list2())
+#print(pinyin_to_zhuyin('yo1'))
+#print(pinyin_to_zhuyin('yo'))
 #print(pinyin_to_zhuyin('lve4'))
 #print(get_jyutping('為'))
 #print(get_jyutping('爲'))
@@ -244,7 +311,7 @@ main()
 #print(pinyin_to_zhuyin('o'))
 #print(pinyin_to_zhuyin('O'))
 #print_with_pronunciation('二丁目')
-#print(get_zhuyin('大家好'))
-#print(get_jyutping('什么'))
+#print(get_all_zhuyin('大家好'))
+#print(get_all_jyutping('什么'))
 #print(get_zhuyin_base('大家好'))
 #print(is_valid_pinyin(pinyin.get('大家好', format='numerical', delimiter=' ')))
