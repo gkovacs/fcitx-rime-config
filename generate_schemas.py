@@ -23,14 +23,18 @@ def generate_jyutping_display():
   out = clone_schema('td_pinyin_flypy_jyutping')
   del out['speller']
   del out['translator']
-  out['schema']['name'] = '小鶴雙拼（粵）'
+  out['schema']['name'] = '注粵雙拼'
   out['schema']['schema_id'] = 'td_pinyin_flypy_jyutping_display'
+  out['schema']['dependencies'].append('leimaau_jyutping_zhuyin_nospaces')
   out['recognizer']['patterns']['putonghua_to_jyutping_lookup'] = "^[a-z;/,.]*$"
+  out['putonghua_to_jyutping_reverse_lookup']['dictionary'] = 'leimaau_jyutping_zhuyin_nospaces'
   return out
 
 def clone_schema(schema_name):
   if schema_name == 'td_pinyin_flypy_jyutping_display':
     return generate_jyutping_display()
+  if schema_name == 'double_jyutping_display':
+    schema_name = 'double_jyutping'
   return get_base_schema(schema_name)
 
 def generate_key_binder(basename, newname, switchname, isqwerty):
@@ -65,13 +69,13 @@ def generate_key_binder_qwertycolemak(basename, newname, switchname, isqwerty):
   ''')
   nb = []
   if isqwerty:
-    nb.append({'accept': 'Control+Shift+space', 'select': 'colemak_' + basename, 'when': 'always'})
-    nb.append({'accept': 'Control+space', 'select': basename, 'when': 'always'})
+    nb.append({'accept': 'Control+Shift+space', 'select': 'colemak_' + newname, 'when': 'always'})
+    nb.append({'accept': 'Control+space', 'select': newname, 'when': 'always'})
     nb.append({'accept': 'F35', 'select': switchname, 'when': 'always'})
     nb.append({'accept': 'Alt+space', 'select': switchname, 'when': 'always'})
   else:
-    nb.append({'accept': 'Control+Shift+space', 'select': 'qwerty_' + basename, 'when': 'always'})
-    nb.append({'accept': 'Control+space', 'select': basename + '_colemak', 'when': 'always'})
+    nb.append({'accept': 'Control+Shift+space', 'select': 'qwerty_' + newname, 'when': 'always'})
+    nb.append({'accept': 'Control+space', 'select': newname + '_colemak', 'when': 'always'})
     nb.append({'accept': 'F35', 'select': switchname + '_colemak', 'when': 'always'})
     nb.append({'accept': 'Alt+space', 'select': switchname + '_colemak', 'when': 'always'})
   return binding_base + nb
@@ -95,7 +99,6 @@ def generate_schema(basename, newname, switchname, isqwerty):
   return out
 
 def write_schema(basename, newname, switchname, isqwerty):
-  out = generate_schema(basename, newname, switchname, isqwerty)
   if basename == 'qwerty':
     filename = 'qwerty_' + newname + '.schema.yaml'
   elif basename == 'colemak':
@@ -105,6 +108,7 @@ def write_schema(basename, newname, switchname, isqwerty):
       filename = newname + '.schema.yaml'
     else:
       filename = newname + '_colemak.schema.yaml'
+  out = generate_schema(basename, newname, switchname, isqwerty)
   outf = open(filename, 'wt')
   outf.write(json.dumps(out, ensure_ascii=False, indent=2))
   outf.close()
@@ -124,5 +128,5 @@ def write_schemas(basename1, basename2, name1, name2):
     write_schema(bn, nn, sn, iq)
 
 write_schemas('td_pinyin_flypy_jyutping', 'double_jyutping', 'td_pinyin_flypy_jyutping', 'double_jyutping')
-write_schemas('td_pinyin_flypy_jyutping_display', 'double_jyutping', 'td_pinyin_flypy_jyutping_display', 'double_jyutping_display')
+write_schemas('td_pinyin_flypy_jyutping_display', 'double_jyutping_display', 'td_pinyin_flypy_jyutping_display', 'double_jyutping_display')
 
