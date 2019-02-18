@@ -281,9 +281,10 @@ def main():
   outfile.close()
 
 main()
+#print(get_all_zhuyin('炒鱿鱼'))
 #print(get_zhuyin_base('垃圾'))
 #print(pinyin.get('垃圾', format='numerical', delimiter=' '))
-# print(get_all_zhuyin('垃圾'))
+#print(get_all_zhuyin('垃圾'))
 # print(get_all_jyutping('什么'))
 # print(get_all_zhuyin('说'))
 # print(get_all_jyutping('说'))
