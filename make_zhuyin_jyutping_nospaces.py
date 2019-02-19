@@ -2,11 +2,16 @@
 
 import sys
 from collections import Counter
+import json
 
 from memoize import memoize
 import pinyin
 import jyutping
-import pycantonese
+# import pycantonese
+# corpus = pycantonese.hkcancor()
+#from hanziconv import HanziConv
+# from opencc import OpenCC
+# s2hk = OpenCC('s2hk').convert
 
 from mkdict import pinyin_to_zhuyin_real as pinyin_to_zhuyin
 from mkdict import get_all_yue, get_merged_entries
@@ -31,6 +36,26 @@ def is_valid_pinyin(pin):
     if not c in all_valid:
       return False
   return True
+
+@memoize
+def get_word_to_jyutping_corpus_freq_all():
+  return json.load(open('jyutping_corpus_freq.json'))
+
+def get_word_to_jyutping_corpus_freq(word):
+  word_to_corpus_freq = get_word_to_jyutping_corpus_freq_all()
+  if word in word_to_corpus_freq:
+    return word_to_corpus_freq[word]
+  return {}
+
+def get_word_to_jyutping_corpus_mostfreq(word):
+  jyut_to_freq = get_word_to_jyutping_corpus_freq(word)
+  max_count = 0
+  jyut_with_max_count = None
+  for jyut,count in get_word_to_jyutping_corpus_freq(word).items():
+    if count > max_count:
+      max_count = count
+      jyut_with_max_count = jyut
+  return jyut_with_max_count
 
 @memoize
 def get_word_to_zhuyin_list2():
@@ -101,6 +126,9 @@ def get_all_jyutping(word):
   if jyut != None and None not in jyut:
     if is_unambiguous(jyut) and (len(output) == 0 or len(output) > 1):
       output.insert(0, ''.join(get_first_of_all(jyut)).strip().replace(' ', ''))
+  jyut = get_word_to_jyutping_corpus_mostfreq(word)
+  if jyut != None:
+    output.insert(0, jyut)
   return [x.strip().replace(' ', '') for x in output]
 
 def get_first_of_all(l):
@@ -281,6 +309,9 @@ def main():
   outfile.close()
 
 main()
+#print(get_word_to_jyutping_corpus_mostfreq('从'))
+#print(get_all_jyutping('从'))
+#print(get_all_jyutping('從'))
 #print(get_all_zhuyin('炒鱿鱼'))
 #print(get_zhuyin_base('垃圾'))
 #print(pinyin.get('垃圾', format='numerical', delimiter=' '))
