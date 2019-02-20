@@ -26,9 +26,8 @@ def generate_jyutping_display():
   out['schema']['name'] = '注粵雙拼'
   out['schema']['schema_id'] = 'td_pinyin_flypy_jyutping_display'
   out['schema']['dependencies'].append('leimaau_jyutping_zhuyin_nospaces')
-  out['recognizer']['patterns']['putonghua_to_jyutping_lookup'] = "^[a-z;/,.]*$"
   out['putonghua_to_jyutping_reverse_lookup']['dictionary'] = 'leimaau_jyutping_zhuyin_nospaces'
-  out['recognizer']['patterns']["putonghua_to_jyutping_lookup"] = "^[a-z]*$"
+  out['recognizer']['patterns']["putonghua_to_jyutping_lookup"] = "^[a-z]+[a-z;/,.]*$"
   return out
 
 def clone_schema(schema_name):

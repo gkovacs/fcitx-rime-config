@@ -3,7 +3,7 @@ var:
     ascii_punct: false
     full_shape: false
     simplification: false
-  previously_selected_schema: td_pinyin_flypy_jyutping
+  previously_selected_schema: td_pinyin_flypy_jyutping_display
   schema_access_time:
     colemak: 1550386576
     double_jyutping: 1550486601
@@ -16,4 +16,4 @@ var:
     qwerty_td_pinyin_flypy_jyutping: 1550390696
     qwerty_td_pinyin_flypy_jyutping_display: 1550466373
     td_pinyin_flypy_jyutping: 1550637284
-    td_pinyin_flypy_jyutping_display: 1550637274
+    td_pinyin_flypy_jyutping_display: 1550637913
