@@ -216,6 +216,71 @@ translator:
   spelling_hints: 9
   prism: double_jyutping
   preedit_format:
+    - xform/(^|[ '])u/$1G/
+    - xform/(^|[ '])y/$1Q/
+    - xform/(^|[ '])aa/$1N/ # aa => ng
+    - xform/(^|[ '])mm/$1M/ # mm => m
+    - xform/(^|[ '])a/$1N/
+    - xform/(^|[ '])e/$1E/
+    - xform/(^|[ '])(\w)(\w)r/$1$2$3T/
+    - xform/(^|[ '])(\w)(\w)o/$1$2$3P/
+    - xform/(^|[ '])(\w)(\w)i/$1$2$3K/
+    # tones non-ptk
+    - xform/(^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM,]);/$1$2$3¹/
+    - xform/(^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM,])x/$1$2$3⁴/
+    # - xform (^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM])/ $1$2$3²
+    # - xform (^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM])\. $1$2$3⁶
+    - xform/(^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM,]),/$1$2$3³/
+    - xform/(^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM,])v/$1$2$3⁵/
+    # tones ptk
+    - xform/(^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM,])([PTK]);/$1$2$3$4¹/
+    - xform/(^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM,])([PTK])x/$1$2$3$4⁴/
+    # - 'xform ([abcdefghijklmnopqrstuvwxyzNM])([PTK])/ $1$2²'
+    # - 'xform ([abcdefghijklmnopqrstuvwxyzNM])([PTK])\. $1$2⁶'
+    - xform/(^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM,])([PTK]),/$1$2$3$4³/
+    - xform/(^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM,])([PTK])v/$1$2$3$4⁵/
+    # - "xform (^|[ '])(\w)([aeioumngNM]), $1$2$3³"
+    # - "xform (^|[ '])(\w)([aeioumngNM])v $1$2$3⁵"
+    - xform/(^|[ '])(G|Q|g|k|p|f|b|m|w)w/$1$2ui/
+    - xform/(^|[ '])([wpGkfcbm])y/$1$2un/
+    - xform/(^|[ '])([sdtlghzcnj])t/$1$2yun/
+    - xform/(^|[ '])([gkbpmh])i/$1$2ei/
+    - xform/(^|[ '])([wtGpsdfghjklzcbnm])p/$1$2ing/
+    - xform/(^|[ '])([Etsdghjklzcbnm])a/$1$2am/
+    - xform/(^|[ '])([sndl])w/$1$2ei/
+    - xform/(^|[ '])(\w)q/$1$2iu/
+    - xform/(^|[ '])(\w)r/$1$2A/
+    - xform/(^|[ '])(\w)s/$1$2ung/
+    - xform/(^|[ '])(\w)d/$1$2ai/
+    - xform/(^|[ '])(\w)f/$1$2an/
+    - xform/(^|[ '])(\w)g/$1$2ang/
+    - xform/(^|[ '])(\w)h/$1$2aang/
+    - xform/(^|[ '])(\w)j/$1$2aan/
+    - xform/(^|[ '])(\w)k/$1$2aai/
+    - xform/(^|[ '])(\w)l/$1$2ong/
+    - xform/(^|[ '])(\w);/$1$2aam/
+    - xform/(^|[ '])(\w)z/$1$2ou/
+    - xform/(^|[ '])(\w)x/$1$2oi/
+    - xform/(^|[ '])(\w)c/$1$2au/
+    - xform/(^|[ '])(\w)v/$1$2eoi/
+    - xform/(^|[ '])(\w)b/$1$2in/
+    - xform/(^|[ '])(\w)n/$1$2eon/
+    - xform/(^|[ '])(\w)m/$1$2im/
+    - xform/(^|[ '])(\w),/$1$2aau/
+    # - xform (^|[ '])(\w)\. $1$2oeng
+    # - xform (^|[ '])(\w)/ $1$2eng
+    - xform/A/aa/
+    - xform/G/gw/
+    - xform/Q/kw/
+    - xform/N/ng/
+    - xform/M/m/
+    - xform/E//
+    - xform/mT/t/
+    - xform/mK/k/
+    - xform/mP/p/
+    - xform/T/t/
+    - xform/K/k/
+    - xform/P/p/
     #- xform/([aeioumngptk])qq/$1⁴/
     #- xform/([aeioumngptk])q/$1¹/
     #- xform/([aeioumngptk])vv/$1⁵/
