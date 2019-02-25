@@ -273,6 +273,7 @@
     "tag": "pinyin_lookup",
     "prefix": "`",
     "suffix": "`",
+    "spelling_hints": 10,
     "dictionary": "terra_pinyin.extended",
     "prism": "td_pinyin_flypy",
     "preedit_format": [
@@ -340,6 +341,7 @@
     "tips": "【普】"
   },
   "putonghua_to_jyutping_lookup": {
+    "spelling_hints": 10,
     "tag": "putonghua_to_jyutping_lookup",
     "prefix": "&",
     "suffix": "`",
@@ -441,16 +443,19 @@
     "tips": "【普查粵】"
   },
   "pinyin_reverse_lookup": {
+    "spelling_hints": 10,
     "tags": [
       "pinyin_lookup"
     ],
-    "dictionary": "terra_pinyin_nospaces.extended"
+    "dictionary": "terra_pinyin_nospaces.extended",
+    "overwrite_comment": true
   },
   "putonghua_to_jyutping_reverse_lookup": {
     "tags": [
       "putonghua_to_jyutping_lookup"
     ],
-    "dictionary": "leimaau_jyutping_nospaces"
+    "spelling_hints": 10,
+    "overwrite_comment": true
   },
   "jyutping_to_putonghua_reverse_lookup": {
     "tags": [

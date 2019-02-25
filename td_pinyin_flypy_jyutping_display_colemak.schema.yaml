@@ -129,6 +129,7 @@
   },
   "jyutping_lookup": {
     "tag": "jyutping_lookup",
+    "spelling_hints": 10,
     "prefix": "`",
     "suffix": "`",
     "dictionary": "leimaau_jyutping",
@@ -149,6 +150,7 @@
     "tag": "putonghua_to_jyutping_lookup",
     "prefix": "`Y",
     "suffix": "`",
+    "spelling_hints": 10,
     "dictionary": "terra_pinyin.extended",
     "prism": "td_pinyin_flypy",
     "preedit_format": [
@@ -250,7 +252,7 @@
     "tags": [
       "jyutping_lookup"
     ],
-    "dictionary": "leimaau_jyutping_nospaces"
+    "spelling_hints": 10
   },
   "hannom_lookup": {
     "tag": "hannom_lookup",
@@ -568,7 +570,9 @@
     "tags": [
       "putonghua_to_jyutping_lookup"
     ],
-    "dictionary": "leimaau_jyutping_zhuyin_nospaces"
+    "dictionary": "leimaau_jyutping_zhuyin_nospaces",
+    "spelling_hints": 10,
+    "overwrite_comment": true
   },
   "jyutping_to_putonghua_reverse_lookup": {
     "tags": [

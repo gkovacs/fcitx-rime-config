@@ -357,6 +357,7 @@ pinyin_lookup:
   tag: pinyin_lookup
   prefix: "`"  # 獨用jyutping_lookup反查在反查鍵「`」之後再鍵入〔大寫〕「J」
   suffix: "`"
+  spelling_hints: 10
   dictionary: terra_pinyin.extended
   prism: td_pinyin_flypy
   preedit_format:
@@ -424,6 +425,7 @@ pinyin_lookup:
   #closing_tips: 【粵拼】
 
 putonghua_to_jyutping_lookup:
+  spelling_hints: 10
   tag: putonghua_to_jyutping_lookup
   prefix: "&"  # 獨用jyutping_lookup反查在反查鍵「`」之後再鍵入〔大寫〕「J」
   suffix: "`"
@@ -524,18 +526,21 @@ putonghua_to_jyutping_lookup:
   #closing_tips: 【粵拼】
 
 pinyin_reverse_lookup:
+  spelling_hints: 10
   tags: [ pinyin_lookup ]
   dictionary: terra_pinyin_nospaces.extended
-  #  overwrite_comment: true  # 覆蓋其他提示
+  #overwrite_comment: false  # 覆蓋其他提示
+  overwrite_comment: true # 覆蓋其他提示
   #comment_format:
-  #  - xform/ /\｜/
-  #  - xform/^/（粵拼：〔/
-  #  - xform/$/〕）/
+  #  - xform/sh/ㄕ/
+  #  #- xform/^/（粵拼：〔/
+  #  #- xform/$/〕）/
 
 putonghua_to_jyutping_reverse_lookup:
   tags: [ putonghua_to_jyutping_lookup ]
-  dictionary: leimaau_jyutping_nospaces
-  #  overwrite_comment: true  # 覆蓋其他提示
+  #dictionary: leimaau_jyutping_nospaces
+  spelling_hints: 10
+  overwrite_comment: true  # 覆蓋其他提示
   #comment_format:
   #  - xform/ /\｜/
   #  - xform/^/（粵拼：〔/
