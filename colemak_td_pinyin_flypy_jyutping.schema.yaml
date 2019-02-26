@@ -1,0 +1,170 @@
+{
+  "schema": {
+    "schema_id": "colemak_td_pinyin_flypy_jyutping",
+    "name": "colemak",
+    "version": "0.10",
+    "author": [
+      "Geza Kovacs gkovacs.com"
+    ],
+    "description": "colemak\n"
+  },
+  "switches": [
+    {
+      "name": "ascii_mode",
+      "reset": 0,
+      "states": [
+        "中文",
+        "西文"
+      ]
+    },
+    {
+      "name": "full_shape",
+      "reset": 0,
+      "states": [
+        "半角",
+        "全角"
+      ]
+    },
+    {
+      "name": "simplification",
+      "states": [
+        "漢字",
+        "汉字"
+      ]
+    }
+  ],
+  "engine": {
+    "processors": [
+      "ascii_composer",
+      "key_binder",
+      "punctuator",
+      "express_editor"
+    ],
+    "segmentors": [
+      "ascii_segmentor",
+      "punct_segmentor"
+    ],
+    "translators": [
+      "punct_translator"
+    ]
+  },
+  "punctuator": {
+    "half_shape": {
+      "e": "f",
+      "r": "p",
+      "t": "g",
+      "y": "j",
+      "u": "l",
+      "i": "u",
+      "o": "y",
+      "p": ";",
+      "s": "r",
+      "d": "s",
+      "f": "t",
+      "g": "d",
+      "j": "n",
+      "k": "e",
+      "l": "i",
+      ";": "o",
+      "n": "k",
+      "E": "F",
+      "R": "P",
+      "T": "G",
+      "Y": "J",
+      "U": "L",
+      "I": "U",
+      "O": "Y",
+      "P": ":",
+      "S": "R",
+      "D": "S",
+      "F": "T",
+      "G": "D",
+      "J": "N",
+      "K": "E",
+      "L": "I",
+      ":": "O",
+      "N": "K"
+    },
+    "full_shape": {
+      "e": "f",
+      "r": "p",
+      "t": "g",
+      "y": "j",
+      "u": "l",
+      "i": "u",
+      "o": "y",
+      "p": ";",
+      "s": "r",
+      "d": "s",
+      "f": "t",
+      "g": "d",
+      "j": "n",
+      "k": "e",
+      "l": "i",
+      ";": "o",
+      "n": "k",
+      "E": "F",
+      "R": "P",
+      "T": "G",
+      "Y": "J",
+      "U": "L",
+      "I": "U",
+      "O": "Y",
+      "P": ":",
+      "S": "R",
+      "D": "S",
+      "F": "T",
+      "G": "D",
+      "J": "N",
+      "K": "E",
+      "L": "I",
+      ":": "O",
+      "N": "K"
+    }
+  },
+  "key_binder": {
+    "import_preset": "default",
+    "bindings": [
+      {
+        "accept": "Control+Shift+f",
+        "toggle": "zh_simp",
+        "when": "always"
+      },
+      {
+        "accept": "Control+Shift+F",
+        "toggle": "zh_simp",
+        "when": "always"
+      },
+      {
+        "accept": "Control+Shift+t",
+        "toggle": "zh_tw",
+        "when": "always"
+      },
+      {
+        "accept": "Control+Shift+T",
+        "toggle": "zh_tw",
+        "when": "always"
+      },
+      {
+        "accept": "Control+Shift+space",
+        "select": "qwerty_td_pinyin_flypy_jyutping",
+        "when": "always"
+      },
+      {
+        "accept": "Control+space",
+        "select": "td_pinyin_flypy_jyutping_colemak",
+        "when": "always"
+      },
+      {
+        "accept": "F35",
+        "select": "double_jyutping_colemak",
+        "when": "always"
+      },
+      {
+        "accept": "Alt+space",
+        "select": "double_jyutping_colemak",
+        "when": "always"
+      }
+    ]
+  }
+}

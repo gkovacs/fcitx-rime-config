@@ -1,0 +1,5 @@
+sync
+.place_holder
+*.bin
+*.userdb
+__pycache__

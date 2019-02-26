@@ -1,0 +1,22 @@
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "files.exclude": {
+    "__pycache__": true,
+    "*.userdb": true,
+    "*.dict.yaml": true,
+    "*.dict": true,
+    "opencc": true,
+    "*.bin": true,
+    ".place_holder": true,
+    "*.txt": true,
+    "*.ocd": true,
+    "*.json": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "sync": true,
+    ".vscode": true,
+  }
+}
