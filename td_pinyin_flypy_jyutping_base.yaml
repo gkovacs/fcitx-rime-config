@@ -261,6 +261,7 @@ translator:
     - xform ao ㄠ
     - xform ou ㄡ
     - xform ian ㄧㄢ
+    - xform ya ㄧㄚ
     - xform in ㄧㄣ
     - xform an ㄢ
     - xform en ㄣ
@@ -648,6 +649,7 @@ putonghua_to_jyutping_lookup:
     - xform ao ㄠ
     - xform ou ㄡ
     - xform ian ㄧㄢ
+    - xform ya ㄧㄚ
     - xform in ㄧㄣ
     - xform an ㄢ
     - xform en ㄣ
