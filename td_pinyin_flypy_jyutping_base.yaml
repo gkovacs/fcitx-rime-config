@@ -239,6 +239,12 @@ translator:
     - xform yao ㄧㄠ
     - xform yin ㄧㄣ
     - xform yan ㄧㄢ
+    - xform wan ㄨㄢ
+    - xform wai ㄨㄞ
+    - xform wei ㄨㄟ
+    - xform wen ㄨㄣ
+    - xform wa ㄨㄚ
+    - xform wu ㄨ
     - xform yi ㄧ
     - xform un ㄨㄣ
     - xform ui ㄨㄟ
@@ -484,6 +490,12 @@ putonghua_to_jyutping_lookup:
     - xform yao ㄧㄠ
     - xform yin ㄧㄣ
     - xform yan ㄧㄢ
+    - xform wan ㄨㄢ
+    - xform wai ㄨㄞ
+    - xform wei ㄨㄟ
+    - xform wen ㄨㄣ
+    - xform wa ㄨㄚ
+    - xform wu ㄨ
     - xform yi ㄧ
     - xform un ㄨㄣ
     - xform ui ㄨㄟ
