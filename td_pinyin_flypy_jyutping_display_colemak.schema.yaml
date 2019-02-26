@@ -1,7 +1,7 @@
 {
   "schema": {
     "schema_id": "td_pinyin_flypy_jyutping_display_colemak",
-    "name": "注粵雙拼",
+    "name": "注音雙拼",
     "version": "0.1",
     "author": [
       "double pinyin layout by 鶴",

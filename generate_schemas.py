@@ -23,18 +23,31 @@ def generate_jyutping_display():
   out = clone_schema('td_pinyin_flypy_jyutping')
   del out['speller']
   del out['translator']
-  out['schema']['name'] = '注粵雙拼'
+  out['schema']['name'] = '注音雙拼'
   out['schema']['schema_id'] = 'td_pinyin_flypy_jyutping_display'
   out['schema']['dependencies'].append('leimaau_jyutping_zhuyin_nospaces')
   out['putonghua_to_jyutping_reverse_lookup']['dictionary'] = 'leimaau_jyutping_zhuyin_nospaces'
   out['recognizer']['patterns']["putonghua_to_jyutping_lookup"] = "^[a-z]+[a-z;/,.]*$"
   return out
 
+def generate_zhuyin_display():
+  out = clone_schema('double_jyutping')
+  del out['speller']
+  del out['translator']
+  out['schema']['name'] = '粵雙拼'
+  out['schema']['schema_id'] = 'double_jyutping_display'
+  #out['schema']['dependencies'].append('leimaau_zhuyin_jyutping_nospaces')
+  #out['jyutping_to_putonghua_reverse_lookup']['dictionary'] = 'leimaau_jyutping_zhuyin_nospaces'
+  out['recognizer']['patterns']["jyutping_to_putonghua_lookup"] = "^[a-z]+[a-z;/,.]*$"
+  return out
+
 def clone_schema(schema_name):
   if schema_name == 'td_pinyin_flypy_jyutping_display':
     return generate_jyutping_display()
   if schema_name == 'double_jyutping_display':
-    schema_name = 'double_jyutping'
+    return generate_zhuyin_display()
+  #if schema_name == 'double_jyutping_display':
+  #  schema_name = 'double_jyutping'
   return get_base_schema(schema_name)
 
 def generate_key_binder(basename, newname, switchname, isqwerty):
