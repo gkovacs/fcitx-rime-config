@@ -3,8 +3,8 @@ ascii_composer:
   switch_key:
     Shift_L: noop
     Shift_R: noop
-config_version: 0.35.custom.3401593456
-customization: 3401593456
+config_version: 0.35.custom.3236062971
+customization: 3236062971
 key_binder:
   bindings:
     - {accept: "Control+p", send: Up, when: composing}
@@ -118,7 +118,7 @@ recognizer:
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
 schema_list:
   - schema: td_pinyin_flypy_jyutping_display
-  - schema: double_jyutping
+  - schema: double_jyutping_display
   - schema: hangyl
   - schema: "nihongo-hybrid"
   - schema: hannomPS

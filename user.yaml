@@ -6,7 +6,7 @@ var:
   previously_selected_schema: double_jyutping
   schema_access_time:
     colemak: 1550386576
-    double_jyutping: 1551170250
+    double_jyutping: 1551171567
     double_jyutping_display: 1551166480
     hangyl: 1551132923
     hannomPS: 1551170231
@@ -18,4 +18,4 @@ var:
     qwerty_td_pinyin_flypy_jyutping: 1550390696
     qwerty_td_pinyin_flypy_jyutping_display: 1550466373
     td_pinyin_flypy_jyutping: 1551153078
-    td_pinyin_flypy_jyutping_display: 1551170248
+    td_pinyin_flypy_jyutping_display: 1551171547

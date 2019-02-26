@@ -10,8 +10,8 @@ patch:
     - schema: td_pinyin_flypy_jyutping_display
     #- schema: leimaau_jyutping_zhuyin_nospaces
     #- schema: td_pinyin_flypy          # 朙月拼音
-    - schema: double_jyutping
-    #- schema: double_jyutping_display
+    #- schema: double_jyutping
+    - schema: double_jyutping_display
     #- schema: leimaau_jyutping
     - schema: hangyl
     #- schema: hangyl_hanja
