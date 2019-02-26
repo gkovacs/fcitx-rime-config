@@ -38,7 +38,7 @@ def generate_zhuyin_display():
   out['schema']['schema_id'] = 'double_jyutping_display'
   #out['schema']['dependencies'].append('leimaau_zhuyin_jyutping_nospaces')
   #out['jyutping_to_putonghua_reverse_lookup']['dictionary'] = 'leimaau_jyutping_zhuyin_nospaces'
-  out['recognizer']['patterns']["jyutping_to_putonghua_lookup"] = "^[a-z]+[a-z;/,.]*$"
+  out['recognizer']['patterns']["jyutping_to_putonghua_lookup"] = "^[abcdefghijklmnoprstuvwxyz]+[a-z;/,.]*$" # removed q from initial
   return out
 
 def clone_schema(schema_name):
@@ -58,7 +58,7 @@ def generate_key_binder(basename, newname, switchname, isqwerty):
   - {accept: "Control+Shift+T", toggle: zh_tw, when: always}
   ''')
   nb = []
-  if basename == 'double_jyutping':
+  if basename == 'double_jyutping' or basename == 'double_jyutping_display':
     nb.append({'accept': 'q', 'send': 'q', 'when': 'composing'})
     nb.append({'accept': 'q', 'send': '&', 'when': 'always'})
   if isqwerty:
