@@ -3,13 +3,13 @@ var:
     ascii_punct: false
     full_shape: false
     simplification: false
-  previously_selected_schema: td_pinyin_flypy_jyutping_display
+  previously_selected_schema: double_jyutping
   schema_access_time:
     colemak: 1550386576
-    double_jyutping: 1551168404
+    double_jyutping: 1551170250
     double_jyutping_display: 1551166480
     hangyl: 1551132923
-    hannomPS: 1550607108
+    hannomPS: 1551170231
     leimaau_jyutping: 1550079327
     leimaau_jyutping_nospaces: 1546569476
     leimaau_jyutping_zhuyin_nospaces: 1550458043
@@ -18,4 +18,4 @@ var:
     qwerty_td_pinyin_flypy_jyutping: 1550390696
     qwerty_td_pinyin_flypy_jyutping_display: 1550466373
     td_pinyin_flypy_jyutping: 1551153078
-    td_pinyin_flypy_jyutping_display: 1551168408
+    td_pinyin_flypy_jyutping_display: 1551170248
