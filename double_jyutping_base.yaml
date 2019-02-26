@@ -16,7 +16,8 @@ schema:
     - terra_pinyin.extended
     - terra_pinyin_nospaces.extended
     - stroke
-    - leimaau_jyutping_nospaces
+    #- leimaau_jyutping_nospaces
+    - leimaau_zhuyin_jyutping_nospaces
 
 switches:
   - name: ascii_mode
@@ -316,6 +317,7 @@ jyutping_to_putonghua_lookup:
   tag: jyutping_to_putonghua_lookup
   prefix: "`J"  # 獨用jyutping_lookup反查在反查鍵「`」之後再鍵入〔大寫〕「J」
   suffix: "`"
+  spelling_hints: 10
   dictionary: leimaau_jyutping
   prism: double_jyutping
   preedit_format:
@@ -653,8 +655,10 @@ putonghua_to_jyutping_reverse_lookup:
 
 jyutping_to_putonghua_reverse_lookup:
   tags: [ jyutping_to_putonghua_lookup ]
-  dictionary: terra_pinyin_nospaces.extended
-  #  overwrite_comment: true  # 覆蓋其他提示
+  #dictionary: terra_pinyin_nospaces.extended
+  dictionary: leimaau_zhuyin_jyutping_nospaces
+  spelling_hints: 10
+  overwrite_comment: true  # 覆蓋其他提示
   #comment_format:
   #  - xform/ /\｜/
   #  - xform/^/（粵拼：〔/

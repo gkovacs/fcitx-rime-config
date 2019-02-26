@@ -11,7 +11,7 @@
       "terra_pinyin.extended",
       "terra_pinyin_nospaces.extended",
       "stroke",
-      "leimaau_jyutping_nospaces"
+      "leimaau_zhuyin_jyutping_nospaces"
     ]
   },
   "switches": [
@@ -264,6 +264,7 @@
     "tag": "jyutping_to_putonghua_lookup",
     "prefix": "`J",
     "suffix": "`",
+    "spelling_hints": 10,
     "dictionary": "leimaau_jyutping",
     "prism": "double_jyutping",
     "preedit_format": null,
@@ -539,7 +540,9 @@
     "tags": [
       "jyutping_to_putonghua_lookup"
     ],
-    "dictionary": "terra_pinyin_nospaces.extended"
+    "dictionary": "leimaau_zhuyin_jyutping_nospaces",
+    "spelling_hints": 10,
+    "overwrite_comment": true
   },
   "jyutping_to_stroke_reverse_lookup": {
     "tags": [

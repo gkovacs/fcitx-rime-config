@@ -220,6 +220,24 @@ def print_with_pronunciation(word, pin=None, outfile=sys.stdout):
     return
   print(word + '\t' + ''.join(pronunciation), file=outfile)
 
+def print_with_pronunciation_jyutzhu(word, pin=None, outfile=sys.stdout):
+  if pin == None:
+    zhu = get_zhuyin(word)
+  else:
+    zhu = pinyin_to_zhuyin(pin).strip()
+  jyut = get_jyutping(word)
+  if zhu != None and jyut != None:
+    #pronunciation = jyut
+    pronunciation = jyut + zhu
+  elif zhu != None and jyut == None:
+    #return
+    pronunciation = zhu
+  elif jyut != None and zhu == None:
+    pronunciation = jyut
+  else:
+    return
+  print(word + '\t' + ''.join(pronunciation), file=outfile)
+
 def print_with_pronunciation_zhu(word, pin=None, outfile=sys.stdout):
   if pin == None:
     zhu = get_zhuyin(word)
@@ -291,6 +309,11 @@ def main():
   print_header('leimaau_jyutping_zhuyin_nospaces', outfile=outfile)
   for word in get_word_list():
     print_with_pronunciation(word, outfile=outfile)
+  outfile.close()
+  outfile = open('leimaau_zhuyin_jyutping_nospaces.dict.yaml', 'wt')
+  print_header('leimaau_zhuyin_jyutping_nospaces', outfile=outfile)
+  for word in get_word_list():
+    print_with_pronunciation_jyutzhu(word, outfile=outfile)
   outfile.close()
   outfile = open('terra_pinyin_nospaces.dict.yaml', 'wt')
   print_header('terra_pinyin_nospaces', outfile=outfile)
