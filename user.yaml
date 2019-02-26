@@ -7,7 +7,8 @@ var:
   schema_access_time:
     colemak: 1550386576
     double_jyutping: 1551171567
-    double_jyutping_display: 1551166480
+    double_jyutping_display: 1551179224
+    double_jyutping_display_colemak: 1551173160
     hangyl: 1551132923
     hannomPS: 1551170231
     leimaau_jyutping: 1550079327
@@ -17,5 +18,8 @@ var:
     qwerty_qwerty_td_pinyin_flypy_jyutping: 1550388077
     qwerty_td_pinyin_flypy_jyutping: 1550390696
     qwerty_td_pinyin_flypy_jyutping_display: 1550466373
+    stoke: 1551176313
+    stroke: 1551177257
+    stroke_zhuyin_jyutping: 1551179980
     td_pinyin_flypy_jyutping: 1551153078
-    td_pinyin_flypy_jyutping_display: 1551172624
+    td_pinyin_flypy_jyutping_display: 1551180244

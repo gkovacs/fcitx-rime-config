@@ -20,7 +20,7 @@ patch:
     #- schema: colemak
     #- schema: qwerty
     #- schema: roma_kr
-    #- schema: stoke
+    #- schema: stroke_zhuyin_jyutping
     #- schema: luna_pinyin          # 朙月拼音
     #- schema: double_pinyin        # 自然碼雙拼
   "menu/page_size": 9

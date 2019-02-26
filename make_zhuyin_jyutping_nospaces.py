@@ -331,7 +331,8 @@ def main():
     print_with_pronunciation_jyut(word, outfile=outfile)
   outfile.close()
 
-main()
+if __name__ == '__main__':
+  main()
 #print(get_word_to_jyutping_corpus_mostfreq('从'))
 #print(get_all_jyutping('从'))
 #print(get_all_jyutping('從'))
