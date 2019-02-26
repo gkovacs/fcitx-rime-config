@@ -225,22 +225,29 @@ translator:
     - xform/(^|[ '])(\w)(\w)r/$1$2$3T/
     - xform/(^|[ '])(\w)(\w)o/$1$2$3P/
     - xform/(^|[ '])(\w)(\w)i/$1$2$3K/
+    - xform / Á
     # tones non-ptk
-    - xform/(^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM,]);/$1$2$3¹/
-    - xform/(^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM,])x/$1$2$3⁴/
+    - xform/(^|[ '])(\w)(a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|N|M|,|Á|;|\.);/$1$2$3¹/
+    - xform/(^|[ '])(\w)(a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|N|M|,|Á|;|\.)x/$1$2$3⁴/
     # - xform (^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM])/ $1$2$3²
-    # - xform (^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM])\. $1$2$3⁶
-    - xform/(^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM,]),/$1$2$3³/
-    - xform/(^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM,])v/$1$2$3⁵/
+    #- xform/(^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM,Á;\.])Á/$1$2$3²/
+    #- xform/(^|[ '])(\w)([Á])Á/$1$2$3²/
+    - xform/(^|[ '])(\w)(a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|N|M|,|Á|;|\.)Á/$1$2$3²/
+    - xform/(^|[ '])(\w)(a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|N|M|,|Á|;|\.)\./$1$2$3⁶/
+    - xform/(^|[ '])(\w)(a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|N|M|,|Á|;|\.),/$1$2$3³/
+    - xform/(^|[ '])(\w)(a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|N|M|,|Á|;|\.)v/$1$2$3⁵/
     # tones ptk
-    - xform/(^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM,])([PTK]);/$1$2$3$4¹/
-    - xform/(^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM,])([PTK])x/$1$2$3$4⁴/
+    - xform/(^|[ '])(\w)(a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|N|M|,|Á|;|\.)([PTK]);/$1$2$3$4¹/
+    - xform/(^|[ '])(\w)(a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|N|M|,|Á|;|\.)([PTK])x/$1$2$3$4⁴/
     # - 'xform ([abcdefghijklmnopqrstuvwxyzNM])([PTK])/ $1$2²'
-    # - 'xform ([abcdefghijklmnopqrstuvwxyzNM])([PTK])\. $1$2⁶'
-    - xform/(^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM,])([PTK]),/$1$2$3$4³/
-    - xform/(^|[ '])(\w)([abcdefghijklmnopqrstuvwxyzNM,])([PTK])v/$1$2$3$4⁵/
+    - xform/(^|[ '])(\w)(a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|N|M|,|Á|;|\.)([PTK])Á/$1$2$3$4²/
+    - xform/(^|[ '])(\w)(a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|N|M|,|Á|;|\.)([PTK])\./$1$2$3$4⁶/
+    - xform/(^|[ '])(\w)(a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|N|M|,|Á|;|\.)([PTK]),/$1$2$3$4³/
+    - xform/(^|[ '])(\w)(a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|N|M|,|Á|;|\.)([PTK])v/$1$2$3$4⁵/
     # - "xform (^|[ '])(\w)([aeioumngNM]), $1$2$3³"
     # - "xform (^|[ '])(\w)([aeioumngNM])v $1$2$3⁵"
+    - xform/(^|[ '])(j|z|d|g|c)w(K|T)/$1$2oe$3/
+    - xform/(^|[ '])(h|t|z)w/$1$2oe/
     - xform/(^|[ '])(G|Q|g|k|p|f|b|m|w)w/$1$2ui/
     - xform/(^|[ '])([wpGkfcbm])y/$1$2un/
     - xform/(^|[ '])([sdtlghzcnj])t/$1$2yun/
@@ -267,8 +274,8 @@ translator:
     - xform/(^|[ '])(\w)n/$1$2eon/
     - xform/(^|[ '])(\w)m/$1$2im/
     - xform/(^|[ '])(\w),/$1$2aau/
-    # - xform (^|[ '])(\w)\. $1$2oeng
-    # - xform (^|[ '])(\w)/ $1$2eng
+    - xform/(^|[ '])(\w)\./$1$2oeng/
+    - xform/(^|[ '])(\w)Á/$1$2eng/
     - xform/A/aa/
     - xform/G/gw/
     - xform/Q/kw/
