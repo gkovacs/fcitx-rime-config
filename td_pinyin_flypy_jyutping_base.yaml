@@ -371,12 +371,13 @@ jyutping_lookup:
     - xform/(^|[ '])(\w)(a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|N|M|,|Á|;|\.)([PTK])v/$1$2$3$4⁵/
     # - "xform (^|[ '])(\w)([aeioumngNM]), $1$2$3³"
     # - "xform (^|[ '])(\w)([aeioumngNM])v $1$2$3⁵"
-    - xform/(^|[ '])(j|z|d|g|c|k|l|s)w(K|T)/$1$2oe$3/
+    - xform/(^|[ '])(j|z|d|g|c|k|l|s)wK/$1$2oeK/
+    - xform/(^|[ '])(c|z|d|l|s)wT/$1$2eoT/
     - xform/(^|[ '])(h|t|z)w/$1$2oe/
     - xform/(^|[ '])(G|Q|g|k|p|f|b|m|w)w/$1$2ui/
     - xform/(^|[ '])([wpGkfcbm])y/$1$2un/
     - xform/(^|[ '])([sdtlghzcnj])t/$1$2yun/
-    - xform/(^|[ '])([gkbpmh])i/$1$2ei/
+    - xform/(^|[ '])([gkbpmhf])i($|[^PTK])/$1$2ei$3/
     - xform/(^|[ '])([wtGpsdfghjklzcbnm])p/$1$2ing/
     - xform/(^|[ '])([Etsdghjklzcbnm])a/$1$2am/
     - xform/(^|[ '])([sndl])w/$1$2ei/
@@ -404,6 +405,8 @@ jyutping_lookup:
     - xform/(^|[ '])(\w),/$1$2aau/
     - xform/(^|[ '])(\w)\./$1$2oeng/
     - xform/(^|[ '])(\w)Á/$1$2eng/
+    - xform/(^|[ '])(z|s|c|j)u($|[^PTK])/$1$2yu$3/
+    - xform/(^|[ '])(z|s|c|k|g|j|d|t|h|l)uT/$1$2yuT/
     - xform/A/aa/
     - xform/G/gw/
     - xform/Q/kw/
@@ -471,12 +474,13 @@ jyutping_to_putonghua_lookup:
     - xform/(^|[ '])(\w)(a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|N|M|,|Á|;|\.)([PTK])v/$1$2$3$4⁵/
     # - "xform (^|[ '])(\w)([aeioumngNM]), $1$2$3³"
     # - "xform (^|[ '])(\w)([aeioumngNM])v $1$2$3⁵"
-    - xform/(^|[ '])(j|z|d|g|c|k|l|s)w(K|T)/$1$2oe$3/
+    - xform/(^|[ '])(j|z|d|g|c|k|l|s)wK/$1$2oeK/
+    - xform/(^|[ '])(c|z|d|l|s)wT/$1$2eoT/
     - xform/(^|[ '])(h|t|z)w/$1$2oe/
     - xform/(^|[ '])(G|Q|g|k|p|f|b|m|w)w/$1$2ui/
     - xform/(^|[ '])([wpGkfcbm])y/$1$2un/
     - xform/(^|[ '])([sdtlghzcnj])t/$1$2yun/
-    - xform/(^|[ '])([gkbpmh])i/$1$2ei/
+    - xform/(^|[ '])([gkbpmhf])i($|[^PTK])/$1$2ei$3/
     - xform/(^|[ '])([wtGpsdfghjklzcbnm])p/$1$2ing/
     - xform/(^|[ '])([Etsdghjklzcbnm])a/$1$2am/
     - xform/(^|[ '])([sndl])w/$1$2ei/
@@ -504,6 +508,8 @@ jyutping_to_putonghua_lookup:
     - xform/(^|[ '])(\w),/$1$2aau/
     - xform/(^|[ '])(\w)\./$1$2oeng/
     - xform/(^|[ '])(\w)Á/$1$2eng/
+    - xform/(^|[ '])(z|s|c|j)u($|[^PTK])/$1$2yu$3/
+    - xform/(^|[ '])(z|s|c|k|g|j|d|t|h|l)uT/$1$2yuT/
     - xform/A/aa/
     - xform/G/gw/
     - xform/Q/kw/
@@ -516,6 +522,20 @@ jyutping_to_putonghua_lookup:
     - xform/T/t/
     - xform/K/k/
     - xform/P/p/
+    #- xform/([aeioumngptk])qq/$1⁴/
+    #- xform/([aeioumngptk])q/$1¹/
+    #- xform/([aeioumngptk])vv/$1⁵/
+    #- xform/([aeioumngptk])v/$1²/
+    #- xform/([aeioumngptk])xx/$1⁶/
+    #- xform/([aeioumngptk])x/$1³/
+    # - 'xform ([aeioumngptkqrwy]); $1¹'
+    # - 'xform ([aeioumngptkqrwy])x $1⁴'
+    # - 'xform ([aeioumngptkqrwy])/ $1²'
+    # - 'xform ([aeioumngptkqrwy])\. $1⁶'
+    # - 'xform ([aeioumngptkqrwy]), $1³'
+    # - 'xform ([aeioumngptkqrwy])v $1⁵'
+    #- 'xform r aa'
+    #- 'xform q ng'
   tips: 【粵查普】
   #closing_tips: 【粵拼】
 
