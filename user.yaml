@@ -3,11 +3,11 @@ var:
     ascii_punct: false
     full_shape: false
     simplification: false
-  previously_selected_schema: td_pinyin_flypy_jyutping_display
+  previously_selected_schema: double_jyutping_display
   schema_access_time:
     colemak: 1550386576
-    double_jyutping: 1551171567
-    double_jyutping_display: 1551179224
+    double_jyutping: 1551309351
+    double_jyutping_display: 1551309579
     double_jyutping_display_colemak: 1551173160
     hangyl: 1551132923
     hannomPS: 1551170231

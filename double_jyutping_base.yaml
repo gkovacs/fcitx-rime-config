@@ -99,8 +99,8 @@ speller:
     # mm is for m
     - xform/^m([1-6]?)$/MM$1/
 
-    # r is for null initials
-    - xform/^([a|o|e|u|aa].*)([1-6]?)$/E$1$2/ # this line needs to be fixed
+    # e is for null initials
+    - xform/^([a|o|e|u|aa].*)([1-6]?)$/É$1$2/ # this line needs to be fixed
 
     # shorthands for ng endings
     - xform/(.)aang([1-6]?)$/$1H$2/
@@ -113,7 +113,8 @@ speller:
 
     # shorthand i => ei
     # w => ei for s n d (l added for convenience)
-    - derive/^(s|d|n|l)ei([1-6]?)$/$1W$2/
+    - derive/^lei([1-6]?)$/lW$1/
+    - xform/^(s|d|n)ei([1-6]?)$/$1W$2/
     # i => ei for all others (except si ni di)
     - xform/^(b|f|g|h|k|l|m|p|gw)ei([1-6]?)$/$1I$2/
 
@@ -160,6 +161,7 @@ speller:
     - xform/(.)u(t|k)?([1-6]?)$/$1U$2$3/
     - xform/(.)o(t|k)?([1-6]?)$/$1O$2$3/
     - xform/(.)i(p|t|k)?([1-6]?)$/$1I$2$3/
+    - xform/(.)e(p|t|k)?([1-6]?)$/$1E$2$3/
     - xform/(.)m([1-6]?)$/$1M$2/
     - xform/(.)aa(p|t|k)?([1-6]?)$/$1R$2$3/
     - xform/(.)a(p|t|k)?([1-6]?)$/$1A$2$3/
@@ -197,6 +199,7 @@ speller:
     - xform/^m/M/
 
     - xlit/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/
+    - 'xform É e'
     - 'xform È ;'
     - 'xform Í ,'
     - 'xform Ó .'
