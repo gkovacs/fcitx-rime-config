@@ -267,7 +267,6 @@ def list_dictionaries():
   - luna_pinyin.chat
   - luna_pinyin.net
   - luna_pinyin.user
-  - luna_pinyin.biaoqing
   - luna_pinyin.website
   - luna_pinyin.poetry
   - luna_pinyin.computer

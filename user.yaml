@@ -7,7 +7,7 @@ var:
   schema_access_time:
     colemak: 1550386576
     double_jyutping: 1551309351
-    double_jyutping_display: 1551309579
+    double_jyutping_display: 1551313714
     double_jyutping_display_colemak: 1551173160
     hangyl: 1551132923
     hannomPS: 1551170231
@@ -22,4 +22,4 @@ var:
     stroke: 1551177257
     stroke_zhuyin_jyutping: 1551179980
     td_pinyin_flypy_jyutping: 1551153078
-    td_pinyin_flypy_jyutping_display: 1551180905
+    td_pinyin_flypy_jyutping_display: 1551313634
