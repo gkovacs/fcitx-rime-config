@@ -36,7 +36,7 @@ def generate_zhuyin_display():
   del out['translator']
   out['schema']['name'] = '粵雙拼'
   out['schema']['schema_id'] = 'double_jyutping_display'
-  out['schema']['dependencies'].extend(['double_jyutping'])
+  out['schema']['dependencies'].extend(['double_jyutping', 'td_pinyin_flypy_jyutping'])
   #out['jyutping_to_putonghua_reverse_lookup']['dictionary'] = 'leimaau_jyutping_zhuyin_nospaces'
   out['recognizer']['patterns']["jyutping_to_putonghua_lookup"] = "^[abcdefghijklmnoprstuvwxyz]+[a-z;/,.]*$" # removed q from initial
   return out
