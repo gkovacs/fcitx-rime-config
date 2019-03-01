@@ -15,6 +15,7 @@ schema:
     - stroke_zhuyin_jyutping
     - leimaau_jyutping
     - leimaau_jyutping_nospaces
+    - double_jyutping
     - terra_pinyin_nospaces.extended
     - hannomPS
     - nihongo-hybrid
