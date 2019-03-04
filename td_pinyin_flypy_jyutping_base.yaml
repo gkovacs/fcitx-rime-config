@@ -14,12 +14,12 @@ schema:
   dependencies:
     - stroke_zhuyin_jyutping
     - leimaau_jyutping
-    - leimaau_jyutping_nospaces
     - double_jyutping
     - terra_pinyin_nospaces.extended
     - hannomPS
     - nihongo-hybrid
     - hangyl_hanja
+    - leimaau_jyutping_zhuyin_nospaces
 
 switches:
   - name: ascii_mode
@@ -1135,7 +1135,7 @@ hanja_reverse_lookup:
 
 putonghua_to_jyutping_reverse_lookup:
   tags: [ putonghua_to_jyutping_lookup ]
-  dictionary: leimaau_jyutping_nospaces
+  dictionary: leimaau_jyutping_zhuyin_nospaces
   spelling_hints: 10
   overwrite_comment: true  # 覆蓋其他提示
   #comment_format:

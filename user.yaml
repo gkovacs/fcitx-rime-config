@@ -10,7 +10,7 @@ var:
     double_jyutping_display: 1551406391
     double_jyutping_display_colemak: 1551173160
     hangyl: 1551406377
-    hannomPS: 1551406387
+    hannomPS: 1551479547
     leimaau_jyutping: 1550079327
     leimaau_jyutping_nospaces: 1546569476
     leimaau_jyutping_zhuyin_nospaces: 1550458043
@@ -23,4 +23,4 @@ var:
     stroke: 1551177257
     stroke_zhuyin_jyutping: 1551179980
     td_pinyin_flypy_jyutping: 1551153078
-    td_pinyin_flypy_jyutping_display: 1551406395
+    td_pinyin_flypy_jyutping_display: 1551479613

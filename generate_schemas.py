@@ -25,7 +25,7 @@ def generate_jyutping_display():
   del out['translator']
   out['schema']['name'] = '注音雙拼'
   out['schema']['schema_id'] = 'td_pinyin_flypy_jyutping_display'
-  out['schema']['dependencies'].extend(['leimaau_jyutping_zhuyin_nospaces', 'td_pinyin_flypy_jyutping'])
+  out['schema']['dependencies'].extend(['td_pinyin_flypy_jyutping'])
   out['putonghua_to_jyutping_reverse_lookup']['dictionary'] = 'leimaau_jyutping_zhuyin_nospaces'
   out['recognizer']['patterns']["putonghua_to_jyutping_lookup"] = "^[a-z]+[a-z;/,.]*$"
   return out
