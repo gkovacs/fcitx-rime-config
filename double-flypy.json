@@ -1,0 +1,136 @@
+[
+  [
+    {
+      "t": "#598f1d"
+    },
+    "双粤拼",
+    {
+      "t": "#000000"
+    },
+    "!\n1",
+    "@\n2",
+    "#\n3",
+    "$\n4",
+    "%\n5",
+    "^\n6",
+    "&\n7",
+    "*\n8",
+    "(\n9",
+    ")\n0",
+    "_\n-",
+    "+\n=",
+    {
+      "w": 2
+    },
+    "Backspace"
+  ],
+  [
+    {
+      "w": 1.5
+    },
+    "Tab",
+    "Q\n\n\n\n\n\niu",
+    "W\n\n\n\n\n\nei",
+    "E\n\n\n\n\n\ne",
+    "R\n\n\n\n\n\nuan",
+    "T\n\n\n\n\n\nue",
+    "Y\n\n\n\n\n\nun",
+    "U\n\n\n\n\n\nu",
+    "I\n\n\n\n\n\ni",
+    "O\n\n\n\n\n\no/uo",
+    "P\n\n\n\n\n\nie",
+    "{\n[",
+    "}\n]",
+    {
+      "w": 1.5
+    },
+    "|\n\\"
+  ],
+  [
+    {
+      "w": 1.75
+    },
+    "Caps Lock",
+    "A\n\n\n\n\n\na",
+    "S\n\n\n\n\n\nong",
+    "D\n\n\n\n\n\nai",
+    "F\n\n\n\n\n\nen",
+    "G\n\n\n\n\n\neng",
+    "H\n\n\n\n\n\nang",
+    "J\n\n\n\n\n\nan",
+    "K\n\n\n\n\n\nuai/ing",
+    "L\n\n\n\n\n\niang",
+    {
+      "t": "#000000\n#ff0000"
+    },
+    ";\n第1声\n\n\n\n\n\n\n:",
+    {
+      "t": "#000000"
+    },
+    "\"\n'",
+    {
+      "w": 2.25
+    },
+    "Enter"
+  ],
+  [
+    {
+      "w": 2.25
+    },
+    "Shift",
+    "Z\n\n\n\n\n\nou",
+    "X\n\n\n\n\n\nia/ua",
+    "C\n\n\n\n\n\nao",
+    "V\n\n\n\n\n\nui",
+    "B\n\n\n\n\n\nin",
+    "N\n\n\n\n\n\niao",
+    "M\n\n\n\n\n\nian",
+    {
+      "t": "#000000\n#ff0000"
+    },
+    ",\n第3声\n\n\n\n\n\n\n<",
+    ".\n第4声\n\n\n\n\n\n\n>",
+    "/\n第2声\n\n\n\n\n\n\n?",
+    {
+      "t": "#000000",
+      "w": 2.75
+    },
+    "Shift"
+  ],
+  [
+    {
+      "w": 1.25
+    },
+    "Ctrl",
+    {
+      "w": 1.25
+    },
+    "Win",
+    {
+      "w": 1.25
+    },
+    "Alt",
+    {
+      "a": 7,
+      "w": 6.25
+    },
+    "",
+    {
+      "a": 4,
+      "w": 1.25
+    },
+    "Alt",
+    {
+      "w": 1.25
+    },
+    "Win",
+    {
+      "w": 1.25
+    },
+    "Menu",
+    {
+      "w": 1.25
+    },
+    "Ctrl"
+  ]
+]
