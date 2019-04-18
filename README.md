@@ -2,7 +2,7 @@
 
 This repository includes my Double Jyutping with Optional Tones IME for [RIME](https://rime.im/), Flypy Double Pinyin with Optional Tones, as well as a number of other input methods for RIME.
 
-## Double Jyutping with Optional Tones
+## Double Jyutping with Optional Tones (双粤拼)
 
 ![](double-jyutping.png)
 
@@ -22,7 +22,7 @@ You can type either `q` or "\`" to temporarily switch to Cantonese lookup mode, 
 
 It is implemented by [double_jyutping.schema.yaml](https://github.com/gkovacs/fcitx-rime-config/blob/master/double_jyutping.schema.yaml) in this repository. The [keyboard layout diagram](http://www.keyboard-layout-editor.com/) is [double-jyutping.json](https://github.com/gkovacs/fcitx-rime-config/blob/master/double-jyutping.json).
 
-## Flypy Double Pinyin with Optional Tones
+## Flypy Double Pinyin with Optional Tones (小鹤双拼)
 
 ![](double-flypy.png)
 
