@@ -8,7 +8,7 @@ This repository includes my Double Jyutping with Optional Tones IME for [RIME](h
 
 All syllables in Cantonese (粤语 / 广东话) can be entered unambiguously with 2 keystrokes (or 3 for entering tone, ie ending with -p -t -k). The diagram above is described according to the [Jyutping](https://en.wikipedia.org/wiki/Jyutping) (粤拼) standard.
 
-You can optionally enter a tone with 1 additional keystroke - 1 is `;`, 2 is `/`, 3 is `,`, 4 is `x`, 5 is `v`, 6 is `.`. For instance, 师 is `si;` 史 is `si/` 试 is `si.` 时 is `six` 市 is `siv` 是 is `si.`
+You can optionally enter a tone with 1 additional keystroke - 1 is `;`, 2 is `/`, 3 is `,`, 4 is `x`, 5 is `v`, 6 is `.`. For instance, 师 is `si;` 史 is `si/` 试 is `si,` 时 is `six` 市 is `siv` 是 is `si.`
 
 "ng" 五 is entered by typing `aa`
 
