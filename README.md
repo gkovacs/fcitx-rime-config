@@ -18,7 +18,7 @@ Syllables ending in -p -t -k are entered with 3 keys, where the last one is eith
 
 For initials which can be followed by either i or ei (d, n, s), -ei gets relocated to the `w` key. So "sei" is `sw`, "si" is `si`. For all other initials (g, f, k, p, b, m, l), -ei remains on the `i` key, so "gui" is `gw`, "gei" is `gi`.
 
-For null initial, use `e`. So "on" is `en`, "uk" ie `eui`, "oi" is `ex`, "aa" is `er`, "ak" is `eai`, "am" is "ea"
+For null initial, use `e`. So "on" is `en`, "uk" ie `eui`, "oi" is `ex`, "aa" is `er`, "ak" is `eai`, "am" is `ea`
 
 You can type either `q` or "\`" to temporarily switch to Cantonese lookup mode, if you don't know the Cantonese pronunciation for a word. In this mode you can enter words using the Flypy Double Pinyin method described below, and it will display the Jyutping next to the Chinese characters.
 
