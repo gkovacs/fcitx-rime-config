@@ -20,7 +20,7 @@ For initials which can be followed by either i or ei (d, n, s), -ei gets relocat
 
 For null initial, use `e`. So "on" 安 is `en`, "uk" 屋 is `eui`, "oi" 爱 is `ex`, "aa" 啊 is `er`, "ak" 喔 is `eai`, "am" 暗 is `ea`
 
-You can type either `q` or "\`" to temporarily switch to Cantonese lookup mode, if you don't know the Cantonese pronunciation for a word. In this mode you can enter words using the Flypy Double Pinyin method described below, and it will display the Jyutping next to the Chinese characters.
+You can type either `q` or "\`" to temporarily switch to Putonghua lookup mode, if you don't know the Cantonese pronunciation for a word. In this mode you can enter words using the Flypy Double Pinyin method described below, and it will display the Jyutping next to the Chinese characters.
 
 It is implemented by [double_jyutping.schema.yaml](https://github.com/gkovacs/fcitx-rime-config/blob/master/double_jyutping.schema.yaml) in this repository. The [keyboard layout diagram](http://www.keyboard-layout-editor.com/) is [double-jyutping.json](https://github.com/gkovacs/fcitx-rime-config/blob/master/double-jyutping.json).
 
