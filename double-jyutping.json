@@ -30,19 +30,19 @@
     },
     "Tab",
     {
-      "t": "#598f1d"
+      "t": "#598f1d\n\n\n\n\n\n#000000"
     },
     "双拼\n\n\n\n\n\niu",
     {
-      "t": "#000000"
+      "t": "#000000\n#996505"
     },
-    "W\n\n\n\n\n\nui/oe",
+    "W\n[snd]ei\n\n\n\n\nui/oe/",
     {
-      "t": "#4057cf"
+      "t": "#4057cf\n\n\n\n\n\n#000000"
     },
     "零声母\n\n\n\n\n\ne",
     {
-      "t": "#000000\n#ff0000"
+      "t": "#ff0000\n#ff0000"
     },
     "\n-t 入\n\n\n\n\naa",
     {
@@ -52,7 +52,7 @@
     "KW\n\n\n\n\n\nun",
     "GW\n\n\n\n\n\nu/yu",
     {
-      "t": "#000000\n#ff0000"
+      "t": "#ff0000\n#ff0000"
     },
     "\n-k 入\n\n\n\n\ni/ei",
     "\n-p 入\n\n\n\n\no",
@@ -72,7 +72,13 @@
       "w": 1.75
     },
     "Caps Lock",
-    "NG\n\n\n\n\n\na/am",
+    {
+      "t": "#000000\n#bc00ff"
+    },
+    "NG\nng\n\n\n\n\na/am/",
+    {
+      "t": "#000000"
+    },
     "S\n\n\n\n\n\nung",
     "D\n\n\n\n\n\nai",
     "F\n\n\n\n\n\nan",
@@ -117,7 +123,10 @@
     },
     "B\n\n\n\n\n\nin",
     "N\n\n\n\n\n\non/eon",
-    "M\n\n\n\n\n\nim",
+    {
+      "t": "#000000\n#bc00ff"
+    },
+    "M\nm\n\n\n\n\nim/",
     {
       "t": "#000000\n#fc0000"
     },
