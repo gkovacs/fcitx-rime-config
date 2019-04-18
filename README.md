@@ -32,7 +32,7 @@ All syllables in Standard Chinese (Mandarin / Putonghua / 普通话) can be ente
 
 You can optionally enter a tone with 1 additional keystroke - 1 is `;`, 2 is `/`, 3 is `,`, 4 is `.`
 
-You can type "\`" to temporarily switch to Cantonese lookup mode, if you don't know the Putonghua pronunciation for a word. In this mode you can enter the Double Jyutping method described above, and it will display the Pinyin next to the Chinese characters.
+You can type "\`" to temporarily switch to Cantonese lookup mode, if you don't know the Putonghua pronunciation for a word. In this mode you can enter words using the Double Jyutping method described above, and it will display the Pinyin next to the Chinese characters.
 
 It is implemented by [td_pinyin_flypy_jyutping.schema.yaml](https://github.com/gkovacs/fcitx-rime-config/blob/master/td_pinyin_flypy_jyutping.schema.yaml) in this repository. The [keyboard layout diagram](http://www.keyboard-layout-editor.com/) is [double-flypy.json](https://github.com/gkovacs/fcitx-rime-config/blob/master/double-flypy.json)
 
